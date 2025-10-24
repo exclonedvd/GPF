@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>G.P.F. Training Hub – Difesa / Combat / Ws3</title>
+  <link rel="icon" href="logo.jpg" />
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#8b1a1a"/>
+  <style>
+    :root{
+      --bg:#f7f8fb; --card:#ffffff; --ink:#0e0f14; --muted:#4b5563;
+      --border:#e5e7eb; --accent:#8b1a1a; --accent-2:#b02a2a;
+      --ok:#198754; --ko:#c0392b; --shadow:0 8px 28px rgba(0,0,0,.08); --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    .wrap{max-width:980px;margin:0 auto;padding:18px}
+    header{text-align:center;margin:6px 0 18px}
+    .logo{width:100px;height:100px;object-fit:contain;border-radius:50%;background:#fff;border:1px solid var(--border);box-shadow:var(--shadow)}
+    h1{font-size:clamp(20px,3.6vw,34px);margin:10px 0 6px}
+    .sub{color:var(--muted)}
+    .grid{display:grid;gap:14px;grid-template-columns:1fr}
+    @media(min-width:720px){ .grid{grid-template-columns:repeat(3,1fr)} }
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border:none;border-radius:12px;padding:12px 16px;cursor:pointer;font-weight:700;transition:filter .15s,transform .15s}
+    .btn:hover{filter:brightness(1.05);transform:translateY(-1px)}
+    .btn.primary{background:linear-gradient(180deg,var(--accent),var(--accent-2));color:#fff}
+    .btn.secondary{background:#fff;color:var(--ink);border:1px solid var(--border)}
+    .btn.ghost{background:#fff;color:var(--ink);border:1px dashed var(--border)}
+    .btn:disabled{opacity:.6;cursor:not-allowed;transform:none}
+    .row{display:flex;gap:10px;flex-wrap:wrap}
+    .panel{margin-top:18px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
+    .label{font-size:13px;color:var(--muted);margin-bottom:6px}
+    select,input[type="file"]{background:#fff;border:1px solid var(--border);color:var(--ink);padding:10px;border-radius:10px;width:100%}
+    .pill{display:inline-block;font-size:12px;padding:6px 10px;border-radius:999px;background:#f3f4f6;border:1px solid var(--border);color:#374151;margin-right:8px}
+    .question{font-size:clamp(18px,2.8vw,22px);line-height:1.35;margin:8px 0 6px}
+    .answers{display:grid;gap:10px}
+    .answer{background:#fff;border:1px solid var(--border);border-radius:12px;padding:12px;text-align:left;cursor:pointer}
+    .answer:hover{background:#fafafa}
+    .answer.correct{border-color:rgba(25,135,84,.9);background:rgba(25,135,84,.06)}
+    .answer.wrong{border-color:rgba(192,57,43,.9);background:rgba(192,57,43,.06)}
+    .feedback{margin:8px 0 2px;font-weight:700}
+    .feedback.ok{color:var(--ok)} .feedback.ko{color:var(--ko)}
+    .muted{color:var(--muted)}
+    .hidden{display:none !important}
+    .kpi{display:flex;gap:12px;flex-wrap:wrap;margin:6px 0 12px}
+    .kpi .box{flex:1 1 160px;background:#fff;border:1px solid var(--border);border-radius:12px;padding:12px;text-align:center}
+    .box .big{font-size:24px;font-weight:800}
+    .qimg img{max-width:100%;max-height:320px;border:1px solid var(--border);border-radius:12px;box-shadow:var(--shadow);display:block;margin:8px auto}
+    .qimg .ph{color:var(--muted);font-size:13px;text-align:center;border:1px dashed var(--border);border-radius:12px;padding:10px;background:#fff;margin:8px 0}
+    /* Modal */
+    .modal{position:fixed;inset:0;background:rgba(0,0,0,.32);display:flex;align-items:center;justify-content:center;z-index:9999}
+    .modal.hidden{display:none}
+    .modal-card{background:#fff;border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow);padding:16px;max-width:520px;width:92%}
+    .modal-card h3{margin:0 0 6px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="logo.jpg" alt="Logo" class="logo" />
+      <h1>G.P.F. Training Hub</h1>
+      <div class="sub">Allenati con banche dati distinte: <b>Difesa Terrestre</b>, <b>Combat Readiness</b>, <b>WS3</b>.</div>
+    </header>
+
+    <!-- HOME -->
+    
+      <section id="home" class="grid">
+  <div class="card" style="text-align:center;">
+    <h3 style="margin:0">Difesa Terrestre</h3>
+    <p style="margin:0 0 16px 0;"></p>
+    <div class="row" style="justify-content:center;">
+      <button class="btn primary" data-dataset="difesa">Apri simulatore</button>
+      <button class="btn ghost" data-print="difesa">Visualizza banca dati</button>
+    </div>
+  </div>
+
+  <div class="card" style="text-align:center;">
+    <h3 style="margin:0">Combat Readiness</h3>
+    <p style="margin:0 0 16px 0;"></p>
+    <div class="row" style="justify-content:center;">
+      <button class="btn primary" data-dataset="combad">Apri simulatore</button>
+      <button class="btn ghost" data-print="combad">Visualizza banca dati</button>
+    </div>
+  </div>
+
+  <div class="card" style="text-align:center;">
+    <h3 style="margin:0">Ws3</h3>
+    <p style="margin:0 0 16px 0;"></p>
+    <div class="row" style="justify-content:center;">
+      <button class="btn primary" data-dataset="ws3">Apri simulatore</button>
+      <button class="btn ghost" data-print="ws3">Visualizza banca dati</button>
+    </div>
+  </div>
+</section>
+
+
+    <!-- CONFIG -->
+    <section id="config" class="panel hidden">
+      <div class="row">
+        <div style="flex:2">
+          <div class="label">Modalità</div>
+          <div class="row">
+            <label><input type="radio" name="mode" value="misto" checked> Misto casuale</label>
+            <label><input type="radio" name="mode" value="materia"> Per materia</label>
+          </div>
+        </div>
+        <div id="materiaBox" style="flex:1;display:none">
+          <div class="label">Materia</div>
+          <select id="materiaSelect"></select>
+        </div>
+        <div style="flex:1">
+          <div class="label">Numero domande</div>
+          <select id="numQ">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="40">40</option>
+            <option value="all">Tutte</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:10px">
+        <button class="btn primary" id="startBtn">Inizia</button>
+        <button class="btn secondary" id="backHome">Indietro</button>
+        <button class="btn ghost" id="printBtn">Stampa banca dati PDF</button>
+      </div>
+
+    </section>
+
+    <!-- QUIZ -->
+    <section id="quiz" class="panel hidden">
+      <div class="row" style="align-items:center">
+        <div class="pill" id="pillDataset">DATASET</div>
+        <div class="pill" id="pillMateria" style="display:none"></div>
+        <div class="pill" id="pillProgress">0/0</div>
+        <div class="pill" id="pillTime">00:00</div>
+      </div>
+
+      <div id="qText" class="question"></div>
+      <div id="qImage" class="qimg"></div>
+      <div id="answers" class="answers"></div>
+      <div id="explain" class="muted" style="margin-top:8px"></div>
+
+      <div class="row" style="margin-top:12px">
+        <button class="btn secondary" id="prevBtn">◀ Indietro</button>
+        <button class="btn primary" id="nextBtn" disabled>Avanti ▶</button>
+        <button class="btn ghost" id="quitBtn">Termina</button>
+        <button class="btn ghost" id="homeQuizBtn">Home</button>
+      </div>
+    </section>
+
+    <!-- RESULT -->
+    <section id="result" class="panel hidden">
+      <h3 style="margin:2px 0 8px">Risultato</h3>
+      <div class="kpi">
+        <div class="box"><div class="label">Punteggio</div><div class="big" id="kpiScore">0/0</div></div>
+        <div class="box"><div class="label">Percentuale</div><div class="big" id="kpiPerc">0%</div></div>
+        <div class="box"><div class="label">Tempo impiegato</div><div class="big" id="kpiTime">00:00</div></div>
+      </div>
+
+      <details>
+        <summary>Vedi riepilogo errori</summary>
+        <div id="errorsList"></div>
+      </details>
+
+      <div class="row" style="margin-top:14px">
+        <button class="btn primary" id="retryErrors">Ripeti solo gli errori</button>
+        <button class="btn secondary" id="restart">Nuova sessione</button>
+        <button class="btn ghost" id="homeBtn">Torna alla Home</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- Confirm Modal -->
+  <div id="confirmOverlay" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
+    <div class="modal-card">
+      <h3 id="confirmTitle">Vuoi davvero uscire?</h3>
+      <p id="confirmMsg">Uscendo perderai i progressi della sessione in corso.</p>
+      <div class="row" style="justify-content:flex-end">
+        <button id="confirmCancel" class="btn secondary">Annulla</button>
+        <button id="confirmOk" class="btn primary">Conferma</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Print Modal (choose materia & highlight) -->
+  <div id="printOverlay" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="printTitle">
+    <div class="modal-card">
+      <h3 id="printTitle">Stampa banca dati</h3>
+      <div class="label">Materia</div>
+      <select id="printMateria"></select>
+      <div class="row" style="margin-top:8px">
+        <label><input type="checkbox" id="printShowAnswers" checked> Evidenzia risposte esatte</label>
+      </div>
+      <div class="row" style="margin-top:12px;justify-content:flex-end">
+        <button class="btn secondary" id="printCancel">Annulla</button>
+        <button class="btn primary" id="printGo">Apri PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  // Register service worker (GitHub Pages only; file:// won't register)
+  if('serviceWorker' in navigator){ navigator.serviceWorker.register('./sw.js').catch(()=>{}); }
+
+  // PWA Install handling
+  const installBtn = document.getElementById('installBtn');
+  const iosOverlay = document.getElementById('iosOverlay');
+  const iosClose = document.getElementById('iosClose');
+  let deferredPrompt = null;
+
+  function isStandalone(){
+    return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+  }
+  function isiOS(){
+    const ua = window.navigator.userAgent.toLowerCase();
+    return /iphone|ipad|ipod/.test(ua);
+  }
+  function hideInstall(){
+    if(installBtn) installBtn.style.display = 'none';
+    try{ localStorage.setItem('pwa-installed','1'); }catch(e){}
+  }
+  function showInstallIfEligible(){
+    const flag = (localStorage.getItem('pwa-installed') === '1');
+    if(isStandalone() || flag){
+      hideInstall();
+    } else {
+      if(installBtn) installBtn.style.display = 'inline-flex';
+    }
+  }
+  window.addEventListener('appinstalled', () => { hideInstall(); });
+
+  window.addEventListener('beforeinstallprompt', (e)=>{
+    e.preventDefault();
+    deferredPrompt = e;
+    showInstallIfEligible();
+  });
+
+  if(installBtn){
+    installBtn.addEventListener('click', async ()=>{
+      if(isiOS()){
+        // show minimal guide
+        iosOverlay.classList.remove('hidden');
+        return;
+      }
+      if(deferredPrompt){
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        deferredPrompt = null;
+        if(outcome === 'accepted'){ hideInstall(); }
+      } else {
+        // If no prompt available (e.g., desktop Chrome already eligible), try guide
+        if(isStandalone()){ hideInstall(); }
+      }
+    });
+  }
+  if(iosClose){ iosClose.addEventListener('click', ()=> iosOverlay.classList.add('hidden')); }
+  // Initial state (in case beforeinstallprompt hasn't fired yet)
+  document.addEventListener('DOMContentLoaded', showInstallIfEligible);
+
+
+  const UI = {
+    home: document.getElementById('home'),
+    config: document.getElementById('config'),
+    quiz: document.getElementById('quiz'),
+    result: document.getElementById('result'),
+    materiaBox: document.getElementById('materiaBox'),
+    materiaSelect: document.getElementById('materiaSelect'),
+    numQ: document.getElementById('numQ'),
+    startBtn: document.getElementById('startBtn'),
+    backHome: document.getElementById('backHome'),
+    pillDataset: document.getElementById('pillDataset'),
+    pillMateria: document.getElementById('pillMateria'),
+    pillProgress: document.getElementById('pillProgress'),
+    pillTime: document.getElementById('pillTime'),
+    qText: document.getElementById('qText'),
+    qImage: document.getElementById('qImage'),
+    answers: document.getElementById('answers'),
+    explain: document.getElementById('explain'),
+    prevBtn: document.getElementById('prevBtn'),
+    nextBtn: document.getElementById('nextBtn'),
+    quitBtn: document.getElementById('quitBtn'),
+    homeQuizBtn: document.getElementById('homeQuizBtn'),
+    kpiScore: document.getElementById('kpiScore'),
+    kpiPerc: document.getElementById('kpiPerc'),
+    kpiTime: document.getElementById('kpiTime'),
+    errorsList: document.getElementById('errorsList'),
+    retryErrors: document.getElementById('retryErrors'),
+    restart: document.getElementById('restart'),
+    homeBtn: document.getElementById('homeBtn'),
+    confirmOverlay: document.getElementById('confirmOverlay'),
+    confirmMsg: document.getElementById('confirmMsg'),
+    confirmOk: document.getElementById('confirmOk'),
+    confirmCancel: document.getElementById('confirmCancel'),
+    printBtn: document.getElementById('printBtn'),
+    printOverlay: document.getElementById('printOverlay'),
+    printMateria: document.getElementById('printMateria'),
+    printShowAnswers: document.getElementById('printShowAnswers'),
+    printCancel: document.getElementById('printCancel'),
+    printGo: document.getElementById('printGo'),
+  };
+
+  const DATA_FILES = { difesa: 'data/difesa.json', combad: 'data/combad.json', ws3: 'data/ws3.json' };
+
+  let state = {
+    datasetKey: null, dataset: null, mode: 'misto', materia: null,
+    questions: [], order: [], index: 0, startTime: 0, elapsedInt: null,
+    selected: [], evaluated: [], inQuiz: false
+  };
+
+  const $$ = (sel, ctx=document)=>Array.from(ctx.querySelectorAll(sel));
+  const show = (section)=>{ [UI.home, UI.config, UI.quiz, UI.result].forEach(s=>s.classList.add('hidden')); section.classList.remove('hidden'); };
+  const shuffle = arr => arr.map(v=>[Math.random(),v]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
+  const mmss = sec => { const m = Math.floor(sec/60).toString().padStart(2,'0'); const s = Math.floor(sec%60).toString().padStart(2,'0'); return `${m}:${s}`; };
+
+  // Modal utility
+  let _modalConfirmAction = null;
+  function openConfirm(msg, action){
+    UI.confirmMsg.textContent = msg || 'Uscendo perderai i progressi della sessione in corso.';
+    _modalConfirmAction = action || null;
+    UI.confirmOverlay.classList.remove('hidden');
+  }
+  function closeConfirm(){ UI.confirmOverlay.classList.add('hidden'); _modalConfirmAction = null; }
+  UI.confirmCancel.addEventListener('click', closeConfirm);
+  UI.confirmOk.addEventListener('click', ()=>{ const fn=_modalConfirmAction; closeConfirm(); if(fn) fn(); });
+
+  // Print modal utils
+  function openPrintModal(){
+    // fill materie
+    UI.printMateria.innerHTML = '';
+    const optAll = document.createElement('option'); optAll.value='__ALL__'; optAll.textContent='Tutte le materie'; UI.printMateria.appendChild(optAll);
+    (state.dataset.materie||[]).forEach(m=>{
+      const opt = document.createElement('option'); opt.value = m.nome; opt.textContent = m.nome; UI.printMateria.appendChild(opt);
+    });
+    UI.printShowAnswers.checked = true;
+    UI.printOverlay.classList.remove('hidden');
+  }
+  function closePrintModal(){ UI.printOverlay.classList.add('hidden'); }
+
+  async function loadDataset(key){
+    const file = DATA_FILES[key];
+    const res = await fetch(file, {cache:'no-store'});
+    if(!res.ok) throw new Error('Impossibile caricare '+file);
+    return await res.json();
+  }
+
+  function buildQuestions(dataset, mode, materiaName){
+    const mats = dataset.materie || [];
+    let pool = [];
+    mats.forEach(m => (m.domande||[]).forEach(d => pool.push({...d, _materia:m.nome})));
+    if(mode === 'materia') pool = pool.filter(q => q._materia === materiaName);
+    return pool;
+  }
+
+  function pick(pool, n){
+    const shuffled = shuffle(pool);
+    if(n==='all') return shuffled;
+    const N = Math.min(parseInt(n,10), shuffled.length);
+    return shuffled.slice(0, N);
+  }
+
+  function renderImage(src){
+    UI.qImage.innerHTML = '';
+    if(!src || !src.trim()) return;
+    const im = new Image();
+    im.alt = 'immagine domanda';
+    im.onload = ()=>{};
+    im.onerror = ()=>{
+      const div = document.createElement('div');
+      div.className = 'ph';
+      div.textContent = 'Immagine non trovata: ' + src + ' (verifica cartella imags/)';
+      UI.qImage.appendChild(div);
+    };
+    im.src = src;
+    UI.qImage.appendChild(im);
+  }
+
+  function startSession(){
+    state.index = 0;
+    state.selected = new Array(state.questions.length).fill(null);
+    state.evaluated = new Array(state.questions.length).fill(false);
+    state.order = state.questions.map(q => {
+      const idx = [0,1,2,3];
+      const s = shuffle(idx);
+      return {answersNow: s.map(i=>q.risposte[i]), correctNow: s.indexOf(q.corretta)};
+    });
+    state.startTime = Date.now();
+    if(state.elapsedInt) clearInterval(state.elapsedInt);
+    state.elapsedInt = setInterval(()=>{
+      UI.pillTime.textContent = mmss((Date.now()-state.startTime)/1000);
+    }, 500);
+    state.inQuiz = true;
+    renderQuestion();
+    show(UI.quiz);
+  }
+
+  function renderQuestion(){
+    const q = state.questions[state.index];
+    const meta = state.order[state.index];
+    UI.pillDataset.textContent = state.datasetKey.toUpperCase();
+    if(state.mode==='materia'){ UI.pillMateria.style.display='inline-block'; UI.pillMateria.textContent = q._materia; } else { UI.pillMateria.style.display='none'; }
+    UI.pillProgress.textContent = `${state.index+1}/${state.questions.length}`;
+    UI.qText.textContent = q.testo;
+    renderImage(q.immagine || '');
+    UI.answers.innerHTML = '';
+    meta.answersNow.forEach((txt, i)=>{
+      const b = document.createElement('button');
+      b.className = 'answer';
+      b.textContent = txt;
+      b.addEventListener('click', ()=>handleAnswer(i));
+      UI.answers.appendChild(b);
+    });
+    UI.explain.textContent = '';
+    if(state.evaluated[state.index]){
+      const buttons = $$('.answer', UI.answers);
+      buttons.forEach(b=>b.disabled = true);
+      const sel = state.selected[state.index];
+      const correct = meta.correctNow;
+      if(sel!==null){
+        if(sel===correct){ buttons[sel].classList.add('correct'); UI.explain.innerHTML = `<div class="feedback ok">✔ Corretto</div>${q.spiegazione?'<div class="muted">'+q.spiegazione+'</div>':''}`; }
+        else { buttons[sel].classList.add('wrong'); buttons[correct].classList.add('correct'); UI.explain.innerHTML = `<div class="feedback ko">✘ Errato</div>${q.spiegazione?'<div class="muted">'+q.spiegazione+'</div>':''}`; }
+      }
+      UI.nextBtn.disabled = false;
+    }else{
+      UI.nextBtn.disabled = true;
+    }
+    UI.prevBtn.disabled = (state.index===0);
+  }
+
+  function handleAnswer(i){
+    if(state.evaluated[state.index]) return;
+    const q = state.questions[state.index];
+    const meta = state.order[state.index];
+    const buttons = $$('.answer', UI.answers);
+    buttons.forEach(b=>b.disabled = true);
+    state.selected[state.index] = i;
+    state.evaluated[state.index] = true;
+    const correct = meta.correctNow;
+    if(i===correct){
+      buttons[i].classList.add('correct');
+      UI.explain.innerHTML = `<div class="feedback ok">✔ Corretto</div>${q.spiegazione?'<div class="muted">'+q.spiegazione+'</div>':''}`;
+    }else{
+      buttons[i].classList.add('wrong');
+      buttons[correct].classList.add('correct');
+      UI.explain.innerHTML = `<div class="feedback ko">✘ Errato</div>${q.spiegazione?'<div class="muted">'+q.spiegazione+'</div>':''}`;
+    }
+    UI.nextBtn.disabled = false;
+  }
+
+  function next(){
+    if(state.index < state.questions.length-1){ state.index++; renderQuestion(); }
+    else { endSession(); }
+  }
+  function prev(){ if(state.index>0){ state.index--; renderQuestion(); } }
+
+  function endSession(){
+    clearInterval(state.elapsedInt);
+    const total = state.questions.length;
+    let right = 0; let wrongQs = [];
+    for(let k=0;k<total;k++){
+      const sel = state.selected[k]; const corr = state.order[k].correctNow;
+      if(sel===corr) right++; else wrongQs.push(state.questions[k]);
+    }
+    const perc = total ? Math.round((right/total)*100) : 0;
+    UI.kpiScore.textContent = `${right}/${total}`;
+    UI.kpiPerc.textContent = `${perc}%`;
+    UI.kpiTime.textContent = UI.pillTime.textContent;
+    if(wrongQs.length===0){ UI.errorsList.innerHTML = '<div class="muted">Nessun errore 👏</div>'; }
+    else{
+      UI.errorsList.innerHTML = '';
+      wrongQs.forEach(q=>{
+        const div = document.createElement('div');
+        const answers = q.risposte.map((r,i)=>`<li${i===q.corretta?' style="color:#198754;font-weight:700"':''}>${String.fromCharCode(65+i)}. ${r}</li>`).join('');
+        div.innerHTML = `<div class="pill" style="margin-right:6px">${q._materia}</div> <b>${q.testo}</b><ul style="margin:6px 0 0 18px">${answers}</ul>`;
+        UI.errorsList.appendChild(div);
+      });
+    }
+    state.wrongQuestions = wrongQs.slice();
+    state.inQuiz = false;
+    show(UI.result);
+  }
+
+  // Events
+  $$('.btn[data-dataset]').forEach(btn=>{
+    btn.addEventListener('click', async ()=>{
+      state.datasetKey = btn.dataset.dataset;
+      UI.pillDataset.textContent = state.datasetKey.toUpperCase();
+      state.dataset = await loadDataset(state.datasetKey);
+      UI.materiaSelect.innerHTML = '';
+      (state.dataset.materie||[]).forEach(m=>{
+        const opt = document.createElement('option'); opt.value = m.nome; opt.textContent = m.nome; UI.materiaSelect.appendChild(opt);
+      });
+      $$('input[name="mode"]').forEach(r=>r.checked = r.value==='misto');
+      UI.materiaBox.style.display = 'none';
+      show(UI.config);
+    });
+  });
+
+  // Home-level print buttons
+  $$('.btn[data-print]').forEach(btn=>{
+    btn.addEventListener('click', async ()=>{
+      state.datasetKey = btn.dataset.print;
+      state.dataset = await loadDataset(state.datasetKey);
+      // open print modal immediately
+      openPrintModal();
+    });
+  });
+
+  $$('input[name="mode"]').forEach(r=>{
+    r.addEventListener('change', ()=>{
+      const mode = $$('input[name="mode"]').find(x=>x.checked).value;
+      UI.materiaBox.style.display = (mode==='materia') ? 'block' : 'none';
+    });
+  });
+
+  UI.backHome.addEventListener('click', ()=>show(UI.home));
+
+  UI.startBtn.addEventListener('click', ()=>{
+    state.mode = $$('input[name="mode"]').find(x=>x.checked).value;
+    state.materia = (state.mode==='materia') ? UI.materiaSelect.value : null;
+    const pool = buildQuestions(state.dataset, state.mode, state.materia);
+    const n = UI.numQ.value; state.questions = pick(pool, n);
+    if(n!=='all' && state.questions.length < parseInt(n,10)){ alert(`La banca dati contiene ${pool.length} domande per i filtri scelti. Verranno usate tutte.`); }
+    startSession();
+  });
+
+  UI.nextBtn.addEventListener('click', next);
+  UI.prevBtn.addEventListener('click', prev);
+  UI.quitBtn.addEventListener('click', ()=>{
+    const total = state.questions?.length||0;
+    const answered = state.evaluated?.filter(Boolean).length||0;
+    if(state.inQuiz && answered < total){
+      openConfirm('Terminare ora il quiz? Le risposte non completate saranno perse.', endSession);
+    } else {
+      endSession();
+    }
+  });
+  UI.homeQuizBtn.addEventListener('click', ()=>{
+    if(state.inQuiz){
+      openConfirm('Tornare alla Home? I progressi del quiz corrente andranno persi.', ()=>{ show(UI.home); state.inQuiz=false; });
+    } else { show(UI.home); }
+  });
+  UI.retryErrors.addEventListener('click', ()=>{
+    const errs = state.wrongQuestions || [];
+    if(errs.length===0){ alert('Non ci sono errori da ripetere.'); return; }
+    const ds = { materie: [] };
+    const byM = {}; errs.forEach(q=>{ if(!byM[q._materia]) byM[q._materia]=[]; byM[q._materia].push(q); });
+    ds.materie = Object.keys(byM).map(nome=>({nome, domande: byM[nome]}));
+    state.dataset = ds; state.mode='misto'; state.materia=null; state.questions = buildQuestions(ds,'misto',null);
+    startSession();
+  });
+  UI.restart.addEventListener('click', ()=>show(UI.config));
+  UI.homeBtn.addEventListener('click', ()=>show(UI.home));
+
+  // Avviso su ricarica/uscita pagina mentre il quiz è attivo
+  window.addEventListener('beforeunload', (e)=>{
+    if(state.inQuiz){ e.preventDefault(); e.returnValue=''; }
+  });
+
+  // Print flow (from config)
+  UI.printBtn.addEventListener('click', ()=>{
+    if(!state.dataset){ alert('Scegli prima un simulatore.'); return; }
+    openPrintModal();
+  });
+  UI.printCancel.addEventListener('click', ()=>UI.printOverlay.classList.add('hidden'));
+  UI.printGo.addEventListener('click', ()=>{
+    const optionMateria = UI.printMateria.value; // '__ALL__' or name
+    const highlight = !!UI.printShowAnswers.checked;
+    const payload = { key: state.datasetKey, dataset: state.dataset, optionMateria, highlight };
+    try{
+      localStorage.setItem('quizsim-print', JSON.stringify(payload));
+    }catch(e){}
+    UI.printOverlay.classList.add('hidden');
+    window.open('print.html', '_blank');
+  });
+  </script>
+
+  <!-- iOS Install Guide Modal -->
+  <div id="iosOverlay" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="iosTitle">
+    <div class="modal-card">
+      <h3 id="iosTitle">Aggiungi alla Home (iOS)</h3>
+      <ol style="margin:6px 0 0 18px">
+        <li>Apri questa pagina in <b>Safari</b>.</li>
+        <li>Tocca <b>Condividi</b> (icona quadrato con freccia).</li>
+        <li>Scegli <b>Aggiungi alla Home</b>.</li>
+        <li>Conferma con <b>Aggiungi</b>.</li>
+      </ol>
+      <div class="row" style="justify-content:flex-end;margin-top:10px">
+        <button id="iosClose" class="btn primary">OK</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+</html>

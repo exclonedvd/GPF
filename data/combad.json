@@ -1,0 +1,3230 @@
+{
+  "materie": [
+    {
+      "nome": "Ground Defence",
+      "domande": [
+        {
+          "id": "GRO-001",
+          "testo": "Che cosa è, come funziona e che calibro ha l’arma SC 70?",
+          "risposte": [
+            "Mitragliatrice leggera, funzionamento inerziale, calibro. 7,62 NATO;",
+            "Arma portatile individuale, funzionamento a sottrazione di gas, calibro 5,56 mm NATO.",
+            "Arma portatile di squadra, funzionamento a sottrazione di gas, calibro 5,56 mm NATO.",
+            "Tutte le risposte precedenti sono errate."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "GRO-002",
+          "testo": "Che celerità di tiro, gittata massima, tiro efficace ha l’arma SC 70?",
+          "risposte": [
+            "750 colpi al min., 2600 m, 1200/1500 m.",
+            "1000 colpi al min., 3500 m, 500 m.",
+            "750 colpi al min., 1200/1500 m, 2600 m.",
+            "Tutte le risposte precedenti sono errate."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "GRO-003",
+          "testo": "Quando l’arma SC 70 è in posizione di sparo?",
+          "risposte": [
+            "Quando non è in sicura.",
+            "Quando il selettore di tiro su uno “1” o “A”.",
+            "Quando il caricatore è inserito, la cartuccia è in camera di scoppio, il selettore è su “1” o “A”.",
+            "Tutte le risposte precedenti sono errate."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "GRO-004",
+          "testo": "Se il caricatore non è ben agganciato a quali inconvenienti si puo’ andare incontro?",
+          "risposte": [
+            "Mancata percussione e sparo accientale",
+            "Mancata chiusura e sparo prematuro.",
+            "Mancata alimentazione e/o sganciamento involontario del caricatore.",
+            "Inceppamento meccanico e apertura prematura dell’otturatore."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "GRO-005",
+          "testo": "Che cos’è la mitragliatrice MINIMI, che calibro ha?",
+          "risposte": [
+            "É un’arma individuale, calibro 5.56 mm NATO.",
+            "É un’arma di squadra, calibro 5.56 mm NATO.",
+            "É un’arma antiaerea individuale, calibro 5.56 NATO.",
+            "Tutte le risposte precedenti sono errate."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "GRO-006",
+          "testo": "A cosa serve il congegno di puntamento in un’arma da fuoco?",
+          "risposte": [
+            "A discriminare il tiro.",
+            "A sparare bene.",
+            "A dare la giusta direzione ed inclinazione all’arma affinchè il proiettile possa raggiungere il bersaglio nel punto mirato.",
+            "A mettere a fuoco il bersaglio"
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "GRO-007",
+          "testo": "Quanti e quali tipi di alimentazione ha la mitragliatrice MINIMI?",
+          "risposte": [
+            "Due tipi di alimentazione: a nastro da 200 colpi o con caricatore da 32 colpi.",
+            "Tre tipi di alimentazione: nastro libero, nastro da 200 colpi contenuto in un dispenser, caricatore da 30 colpi.",
+            "Può essere alimentata contemporaneamente sia dal nastro da 200 colpi che dal caricatore da 30 colpi.",
+            "Tutte le risposte precedenti sono errate."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "GRO-008",
+          "testo": "Come si chiama il sistema di mira della mitragliatrice MINIMI e come funziona?",
+          "risposte": [
+            "Tacca di mira fissa e mirino fisso.",
+            "Alzo a diotra, regolabile in elevazione e direzione, mirino regolabile in elevazione e direzione.",
+            "Tacca di mira regolabile e mirino regolabile.",
+            "Tutte le risposte precedenti sono errate."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "GRO-009",
+          "testo": "Che cos’è la ghiera regolazione gas nella MINIMI e come si usa?",
+          "risposte": [
+            "Serve per smontare l’arma, si posiziona su “N” a sinistra.",
+            "Serve per diminuire l’afflusso dei gas per il riarmo dell’arma in condizioni particolari, si ruota la ghiera dalla posizione “N” da sinistra a destra.",
+            "Serve per aumentare l’afflusso dei gas in condizioni di emergenza (arma sporca, difficoltà di riarmo), si ruota la ghiera da sinistra “N” a destra.",
+            "Tutte le risposte precedenti sono errate."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "GRO-010",
+          "testo": "Come inizia il ciclo funzionale nella PM 12 S?",
+          "risposte": [
+            "Otturatore chiuso",
+            "Otturatore aperto",
+            "Con la sicura inserita.",
+            "Con il cane armato"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "GRO-011",
+          "testo": "Che calibro ha la PB 92SB, come funziona, che capacità ha il caricatore?",
+          "risposte": [
+            "Calibro 9x21, funziona ad azione singola, 14 colpi.",
+            "Calibro 9x19, funzionamento semiautomatico a corto rinculo in singola e doppia azione, 15 colpi.",
+            "Calibro 9x19, funzionamento semi-automatico, 14 colpi più 1 in canna.",
+            "Tutte le risposte precedenti sono errate."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "GRO-012",
+          "testo": "Qual’ è la prima operazione da effettuare in caso di inceppamento della PM 12S?",
+          "risposte": [
+            "Inserire la sicura",
+            "Togliere il caricatore",
+            "Arretrare l’otturatore e bloccarlo in apertura.",
+            "Premere la sicura automatica all’impugnatura."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "GRO-013",
+          "testo": "Nelle tecniche di uso dell'ambiente in combattimento, quale dei seguenti è un comportemento corretto?",
+          "risposte": [
+            "Prediligere sempre la posizione \"in piedi\" in quanto consente un più veloce spostamento",
+            "Sfruttare la copertura di elementi isolati",
+            "Essere sempre coperto alla vista e protetto dal fuoco avversario, sfruttando tutti i ripari naturali che in genere il terreno offre",
+            "Muoversi prevalentemente in zone illuminate"
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "GRO-014",
+          "testo": "L'utilizzo delle formazioni consente ai combattenti di garantire:",
+          "risposte": [
+            "Sicurezza",
+            "Flessibilità",
+            "Controllo",
+            "Tutte le risposte precedenti sono esatte"
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "GRO-015",
+          "testo": "Quali sono le principali tecniche di osservazione?",
+          "risposte": [
+            "Immediata, Posticipata e Relativa",
+            "Diretta, Indiretta e Posticipata",
+            "Metodo dei 30 secondi, metodo delle strisce sovrapposte, Metodo della \"W\" e della doppia \"S\"",
+            "Metodo della sovrapposizione della mappa e Metodo dell'Orientamento relativo"
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "GRO-016",
+          "testo": "Quali sono le azioni previste nella procedura S.A.I. per la Pistola PB 92SB?",
+          "risposte": [
+            "Controllare la leva di Smontaggio, verificare l’Arma e Ispezionare la canna.",
+            "Inserire la “Sicura”, togliere il caricatore (Alimentazione) e Ispezionare la camera di scoppio.",
+            "Smontare l’arma, Allungare la molla di riarmo per verificarla e Inserirla nuovamente nell’asta di armamento.",
+            "Le risposte precedenti sono errate."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "GRO-017",
+          "testo": "Se noto un sospetto-intruder all’interno dell’installazione cosa faccio?",
+          "risposte": [
+            "Eseguo la procedura di intimazione e avviso il WOC/BOC/COD .",
+            "Sparo immediatamente un colpo in aria e punto l’arma sul sospetto.",
+            "Mi avvicino per riconoscerlo.",
+            "Non faccio nulla, sarà sicuramente un collega in abiti borghesi."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "GRO-018",
+          "testo": "Cosa indica la \"T\" di M.E.T.H.A.N.E ?",
+          "risposte": [
+            "Time",
+            "Type of accident",
+            "Type of weapon",
+            "Tutte le precedenti risposte sono errate"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "GRO-019",
+          "testo": "Cosa indica la \"L\" di S.A.L.U.T.E ?",
+          "risposte": [
+            "Life",
+            "Location",
+            "Land",
+            "List of people"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "GRO-020",
+          "testo": "Quale dovrebbe essere il rapporto numerico minimo con un prigioniero?",
+          "risposte": [
+            "3 a 1.",
+            "1 a 1.",
+            "2 a 1.",
+            "Tutte le risposte precedenti sono errate."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "GRO-021",
+          "testo": "Quali sono le parti essenziali di una cartuccia",
+          "risposte": [
+            "Bossolo - Incudinetta - Foro di Vampa - Ptoiettile",
+            "Bossolo - Capsula con innesco - Carica di Lancio - Proiettile",
+            "Proiettile - Orlo o Collarino - Scanalatura - Carica dirompente",
+            "Solco di crimpatura - Collarino - Base - Bossolo"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "GRO-022",
+          "testo": "Qual è la funzione della ghiera regolazione gas posta sul cilindro presa gas del fucile  SCP 70-90",
+          "risposte": [
+            "Posizionata su “O”  consente un maggior recupero di gas in caso di difficoltà di riarmo.",
+            "Stabilizzare l’arma all’atto dello sparo",
+            "Tutte le risposte sono errate",
+            "Posizionata su “C” consente un maggior recupero di gas in caso di difficoltà di riarmo."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "GRO-023",
+          "testo": "Cosa impedisce lo sparo accidentale nella pistola Beretta 92 SBr?",
+          "risposte": [
+            "Chiavistello blocca percussore",
+            "Piolo percussore",
+            "Blocco oscillante",
+            "Leva abbatti cane"
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "GRO-024",
+          "testo": "Quando si usa il metodo “SALUTE”",
+          "risposte": [
+            "Per comunicazion relativa al rinvenimento di un UXO/IED.",
+            "Per comunicazioni relative ai risultati delle osservazioni.",
+            "Per comunicazioni da effettuare con l’Infermeria di Corpo.",
+            "Per monitorare lo stato fisico del Personale"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "GRO-025",
+          "testo": "Quali operazioni si devono compiere prima di smontare un’arma?",
+          "risposte": [
+            "Mettere l’arma in sicura, togliere il caricatore e controllare che non ci sia il colpo in canna.",
+            "Togliere il caricatore ed effettuare il colpo in bianco.",
+            "Togliere il caricatore e controllare che non ci sia il colpo in canna.",
+            "Mettere l’arma in sicura, togliere il caricatore ed effettuare il colpo in bianco."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "GRO-026",
+          "testo": "Nella MINIMI quale operazione devo compiere prima di togliere la canna?",
+          "risposte": [
+            "Inserire la sicura",
+            "Aprire il coperchio di alimentazione",
+            "Portare in chiusura il gruppo parti mobili e inserire la sicura.",
+            "Arrettrate e bloccare in apertura il gruppo parti mobili"
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "GRO-027",
+          "testo": "Qual è la funzione della sicura manuale nella PM 12S?",
+          "risposte": [
+            "Evita il recupero dei gas",
+            "Blocca il caricatore",
+            "Blocca il grilletto",
+            "Blocca la sicura automatica all’impugnatura"
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "GRO-028",
+          "testo": "A cosa servono le rigature all’interno della canna di un’arma da fuoco?",
+          "risposte": [
+            "A permettere una più efficace pulizia dell’arma.",
+            "Ad imprimere un moto rotatorio al proiettile al fine di renderlo più stabile.",
+            "Ad aumentare il recupero dei gas al fine di imprimere una maggiore velocità al proiettile.",
+            "Non servono praticamente a nulla."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "GRO-029",
+          "testo": "Posso utilizzare il caricatore dell’arma SC 70 sulla MINIMI?",
+          "risposte": [
+            "Si, ma solo sui nuovi modelli di SC 70 (costruiti dopo il 2001).",
+            "No ma posso utilizzare il caricatore della MINIMI sull’arma SC 70.",
+            "Si.",
+            "No."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "GRO-030",
+          "testo": "Cosa indica la \"H\" di M.E.T.H.A.N.E.",
+          "risposte": [
+            "Hazard",
+            "Help",
+            "Helicopter",
+            "Tutte le precedenti risposte sono errate"
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "GRO-031",
+          "testo": "Il bloccaggio del grilletto nel PM12S è assicurato da",
+          "risposte": [
+            "Dalla sicura automatica all’impugnatura quando non premuta.",
+            "Dall’otturatore.",
+            "Dalla sicura automatica all’impugnatura quando premuta.",
+            "Dalla leva di collegamento."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "GRO-032",
+          "testo": "Che calibro ha l’arma SC 70?",
+          "risposte": [
+            "7,65 mm.",
+            "9 mm Parabellum.",
+            "5,56 mm (NATO).",
+            "9 X 19 mm."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "GRO-033",
+          "testo": "Nella PB 92SB, quando la sicura manuale è disinserita, come sono i “punti rossi” ai lati del carrello?",
+          "risposte": [
+            "Ambedue visibili.",
+            "Non visibili.",
+            "Uno è visibile, l’altro no.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "GRO-034",
+          "testo": "Gli elementi principali che influiscono sulla visibilità diretta degli oggetti da tener conto nell'operazione di mascheramento sono:",
+          "risposte": [
+            "Rilievo e Calore",
+            "Dimensione, Posizione e Illuminazione",
+            "Contorno, Dimensione e Calore",
+            "Contorno, Rilievo e Colore"
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "GRO-035",
+          "testo": "Quante canne ha in dotazione la  MINIMI?",
+          "risposte": [
+            "Due, identificabili perché di colore diverso.",
+            "Due, con numero di matricola diverso.",
+            "Due, contrassegnate dallo stesso numero di matricola dell’arma seguita da /1 e /2.",
+            "Una che bisogna fare raffreddare in caso diuso frequente."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "GRO-036",
+          "testo": "Una delle fondamentali Norme di Sicurezza quando si maneggia un’arma è:",
+          "risposte": [
+            "Tenerla sempre in sicura.",
+            "Tenere il dito indice fuori dal ponticello del grilletto fino a quando non si è deciso di far fuoco.",
+            "Non camerare la cartuccia fino a quando la minaccia non è quasi concretizzata.",
+            "Tenere l’arma in fondina fino a quando non ordinato dal Capo Squadra"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "GRO-037",
+          "testo": "Quante sono le Fasi relative al Fermo di una persona",
+          "risposte": [
+            "2",
+            "5",
+            "8",
+            "3"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "GRO-038",
+          "testo": "Che cos’è il calibro balistico di un’arma?",
+          "risposte": [
+            "Il diametro interno della canna misurato tra i due pieni",
+            "La distanza tra due vuoti contrapposti delle rigature all’interno della canna.",
+            "La distanza tra due pieni contrapposti delle rigature all’esterno della canna.",
+            "La distanza tra due vuoti contrapposti delle rigature all’esterno della canna."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "GRO-039",
+          "testo": "Nel fucile Beretta 70 90 SCP dove è posizionato il pulsante sgancio caricatore?",
+          "risposte": [
+            "Sul lato destro della culatta",
+            "Sul dorso dell’impugnatura.",
+            "Sulla maniglia di trasporto",
+            "Sia sul lato destro che su quello sinistro della scatola di scatto."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "GRO-040",
+          "testo": "Quale delle seguenti armi ha 6 rigature destrorse?",
+          "risposte": [
+            "MINIMI.",
+            "PB 92SB.",
+            "SC 70.",
+            "Tutte le precedenti risposte sono esatte."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "GRO-041",
+          "testo": "Cosa indica la croce nel cerchio stampigliata sul fondello del bossolo di una cartuccia?",
+          "risposte": [
+            "E’ il simbolo dell’ONU e certifica che la cartuccia può essere utilizzata in ambito NATO.",
+            "E’ il simbolo della Croce Rossa e indica la pericolosità della cartuccia.",
+            "È’ il simbolo dell’Unione Europea e indica che solo le armi di fabbricazione Europea possono spararare tali cartucce.",
+            "E’ il simbolo della NATO e certifica che la cartuccia risponde ai requisiti standard richiesti dalla NATO."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "GRO-042",
+          "testo": "Quale delle seguenti armi ha capacità di tiro esclusivamente a colpo singolo?",
+          "risposte": [
+            "MINIMI.",
+            "PB 92SB.",
+            "SC 70.",
+            "Le risposte A e B sono esatte."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "GRO-043",
+          "testo": "Quali sono gli elementi da comunicare al COD in caso di fermo di un veicolo sospetto?",
+          "risposte": [
+            "Colore e Targa",
+            "Marca e Modello",
+            "Coordinate del posto e Passeggeri del Veicolo",
+            "Tutte le risposte sono esatte"
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "GRO-044",
+          "testo": "Che cosa è accaduto se, sparando con la Pistola Beretta 92SB, sia rimasto completamente aperto il blocco otturatore?",
+          "risposte": [
+            "Sono terminati i colpi nel caricatore; è rimasto l’ultimo colpo in camera di scoppio.",
+            "La pistola si è inceppata.",
+            "Si è inserita accidentalmente la sicura.",
+            "Sono terminati i colpi nel caricatore."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "GRO-045",
+          "testo": "In quali armi è possibile regolare la distanza di tiro rispettivamente 150-300 mt e 250-400 mt?",
+          "risposte": [
+            "SC70 e MINIMI.",
+            "PM12 S e SCP 70/90",
+            "SC 70 e SCP 70/90",
+            "92 SBr e SC70"
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "GRO-046",
+          "testo": "Cosa indica l'acronimo S.A.I. ?",
+          "risposte": [
+            "Standard, Activity, International",
+            "Safety, Activity, Intelligence",
+            "Sicurezza, Alimentazione, Ispezione",
+            "Tutte le risposte sono errate"
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "GRO-047",
+          "testo": "Cos’è la “Procedura S.A.I.?",
+          "risposte": [
+            "E’ una procedura da attuare in Teatro Operativo.",
+            "E’ una sequenza di controlli da effettuare per accertarsi che l’arma sia scarica.",
+            "E’  quella procedura che permette  verificare che l’arma in dotazione sia efficiente.",
+            "Tutte le risposte sono errate."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "GRO-048",
+          "testo": "Cosa è un Visore \"IL\" ?",
+          "risposte": [
+            "Uno strumento per illuminare l'ambiente circostante",
+            "Un apparato intensificatore di luce che la visione a bassa luminosità",
+            "Un apparato a Raggi Infrarossi",
+            "Un monitor per la visione delle cartine topografiche"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "GRO-049",
+          "testo": "Cosa succede se nel fucile Beretta serie 70-A mod. SC in fase di rimontaggio dimentico  la leva valvola lancia bombe in posizione verticale?",
+          "risposte": [
+            "Non posso effettuare lo sparo",
+            "L’arma funziona a ripetizione ordinaria.",
+            "L’arma funziona solo a raffica.",
+            "Non posso effettuare un corretto puntamento in quanto mi copre il mirino dell’arma."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "GRO-050",
+          "testo": "Che cos’è il percussore?",
+          "risposte": [
+            "Elemento di qualsiasi arma a retrocarica che ha la funzione di chiudere la culatta.",
+            "Meccanismo atto a provocare lo sparo della  cartuccia tramite l’urto con la capsula d’innesco.",
+            "E’ l’insieme dei solchi tracciati lungo l’anima della canna che imprimono al proiettile un moto rotatorio.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 1
+        }
+      ]
+    },
+    {
+      "nome": "P.A.R.",
+      "domande": [
+        {
+          "id": "PAR-001",
+          "testo": "Come si può definire una “booby-trap”?",
+          "risposte": [
+            "Un congegno che permette il trappolamento di un campo minato, sia in modo regolamentare sia in modo improvvisato.",
+            "Il termine indica che è possibile effettuare il trappolamento di dispositivi improvvisati.",
+            "Congegno designato, costruito o adattato per uccidere o ferire, funziona quando una persona disturba o si avvicina ad un oggetto in apparenza inoffensivo, o si effettua un’azione apparentemente sicura.",
+            "E’ una trappola fabbricata con alto esplosivo concepita per distruggere mezzi e personale che transitano in una determinata area."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "PAR-002",
+          "testo": "In caso di presenza di ordigno inesploso quali azioni è opportuno intraprendere?",
+          "risposte": [
+            "Individuarlo, fotografarlo (con qualsiasi mezzo a disposizione); comunicare la posizione dell’ordigno al WOC/BOC/COD se possibile e allontanarsi rapidamente.",
+            "Comunicare la posizione dell’UXO al WOC/BOC/COD, evacuare l’area (parziale o totale), stabilire un cordone all’area interessata e controllarne l’accesso.",
+            "Avvisare tutto il personale circostante la zona interessata; chiedere al WOC/BOC/COD l’immediato intervento della Squadra EOD.",
+            "Avvicinarsi con estrema cautela per riconoscerlo; interdire gli accessi alla zona interessata e comunicare la posizione dell’ordigno al WOC/BOC/COD."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "PAR-003",
+          "testo": "Come è fatto il cartello per la segnalazione di ordigni inesplosi?",
+          "risposte": [
+            "Di forma triangolare con fondo rosso e striscia gialla.",
+            "Di forma rettangolare con fondo rosso e pittogramma bianco.",
+            "Di forma triangolare con fondo rosso e pittogramma bianco.",
+            "Di forma triangolare con fondo bianco e pittogramma rosso."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "PAR-004",
+          "testo": "Che cosa significa l’acronimo E.O.D.?",
+          "risposte": [
+            "Disattivazione “bonifica” Ordigni Esplosivi.",
+            "Disarmo Ordigni Esplosivi.",
+            "Dispersione Ordigni Esplosivi.",
+            "Disimpegno Ordigni Esplosivi."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "PAR-005",
+          "testo": "Per effettuare la comunicazione RADIO bisogna porsi a quanti metri di distanza dall’UXO-IED?",
+          "risposte": [
+            "300 mt. o più.",
+            "Non esiste una distanza minima.",
+            "25 mt..",
+            "Le risposte A, B, e C sono errate."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "PAR-006",
+          "testo": "Alla presenza di un cratere quali azioni è opportuno intraprendere?",
+          "risposte": [
+            "Allontanarsi dall’area, possibilmente dalla stessa direzione di provenienza, interdire l’accesso all’area, comunicare al WOC/BOC/COD le proprie generalità, l’ora e la posizione del cratere.",
+            "Ispezionare l’area circostante alla ricerca di eventuali altri ordigni, allontanarsi dall’area, comunicare la posizioni degli ordigni inesplosi al WOC/BOC/COD.",
+            "Comunicare al WOC/BOC/COD l’ubicazione del cratere, allontanarsi con calma e proseguire il proprio lavoro.",
+            "Interdire l’accesso all’area del ritrovamento, collaborare con le Squadre della Force Protection, comunicare al WOC/BOC/COD i propri spostamenti."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "PAR-007",
+          "testo": "Che cosa è indicato nella figura?",
+          "risposte": [
+            "Razzo.",
+            "Mina anticarro direzionale.",
+            "Missile.",
+            "Granata da fucile."
+          ],
+          "corretta": 0,
+          "immagine": "imags/2_7.jpg"
+        },
+        {
+          "id": "PAR-008",
+          "testo": "Come possono essere caricati i proiettili da mortaio?",
+          "risposte": [
+            "Caricamento convenzionale e caricamento speciale.",
+            "Solo caricamento convenzionale.",
+            "Caricamento convenzionale.",
+            "Carica cava, fumogeno e alto esplosivo."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "PAR-009",
+          "testo": "Quante e quali sono le tipologie di munizionamento?",
+          "risposte": [
+            "2, convenzionale o speciale.",
+            "5, Alto esplosivo, basso esplosivo, fumogeno, incendiario e chimico.",
+            "4, munizionamento di caduta, da lancio, granate e mine A/U e A/C.",
+            "5, munizionamento di caduta, da lancio, granate, submunizoni e mine."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "PAR-010",
+          "testo": "Che cosa è indicato nella figura?",
+          "risposte": [
+            "Una granata da fucile.",
+            "Un proiettile di mortaio.",
+            "Un IED.",
+            "Una bomba a mano."
+          ],
+          "corretta": 1,
+          "immagine": "imags/2_10.jpg"
+        },
+        {
+          "id": "PAR-011",
+          "testo": "Quali azioni bisogna intraprendere in caso di edificio pericolante?",
+          "risposte": [
+            "Far evacuare il locale; interdire l’accesso all’area.",
+            "Richiedere l’intervento della BDR (Squadre Riparazione Danni) per il ripristino dell’inefficienza.",
+            "Comunicarne la posizione al WOC/BOC/COD.",
+            "Comunicare la posizione al WOC/BOC/COD, far evacuare l’edificio, stabilire un cordone e controllare l’accesso."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "PAR-012",
+          "testo": "Che cosa è il razzo?",
+          "risposte": [
+            "Un proiettile autopropulso.",
+            "Un proiettile superficie-aria o aria-superficie.",
+            "Un proiettile guidato.",
+            "Un proiettile avente velocità superiore a quella del suono."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "PAR-013",
+          "testo": "Che cosa è indicato nella figura?",
+          "risposte": [
+            "Mina anticarro.",
+            "Sub-munizione.",
+            "Granata da fucile.",
+            "Proiettile di mortaio."
+          ],
+          "corretta": 1,
+          "immagine": "imags/2_13.jpg"
+        },
+        {
+          "id": "PAR-014",
+          "testo": "Che cosa significa l’acronimo UXO?",
+          "risposte": [
+            "UneXploded Object  / Oggetto inesploso.",
+            "UneXplosive Ordinances / Ordigni esplosivi.",
+            "UneXploded explosive Ordnance / Ordigno inesploso.",
+            "Unexpected X-ray Ordnance / Ordigno X-ray inesploso."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "PAR-015",
+          "testo": "Qual è il compito principale delle Squadre EOR?",
+          "risposte": [
+            "La disattivazione di IED.",
+            "Il riconoscimento di un UXO.",
+            "Rimozione di un UXO a seguito di segnalazione.",
+            "La disattivazione di un UXO."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "PAR-016",
+          "testo": "Come è fatto il cartello per la segnalazione di booby-traps?",
+          "risposte": [
+            "Di forma rettangolare con fondo rosso e pittogramma bianco.",
+            "Di forma triangolare, con sfondo rosso e striscia bianca",
+            "Di forma triangolare con fondo rosso e pittogramma bianco.",
+            "Tutte le precedenti risposte sono errate: non esiste un cartello di queste fattezze."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "PAR-017",
+          "testo": "Quali sono gli elementi significativi che rendono una busta sospetta?",
+          "risposte": [
+            "Rigonfiamenti irregolari all’interno.",
+            "Macchie oleose o di umido.",
+            "Mancanza del mittente o mittente sconosciuto.",
+            "Tutte le precedenti risposte sono esatte."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "PAR-018",
+          "testo": "Quali azioni poni in essere quando devi applicare il “CONFIRM” delle 5C?",
+          "risposte": [
+            "Confirm, Clear, Cordon, Control e Call.",
+            "Circondo l’area per un raggio di 300 mt.",
+            "Mi accerto della presenza della minaccia, comunico utilizzando il metodo METHANE (in caso di UXO/IED utilizzo il 10-line) il WOC/BOC/COD.",
+            "Permetti l’accesso al solo personale autorizzato se è stata confermata la presenza di IED/UXO."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "PAR-019",
+          "testo": "Come vengono suddivise le tipologie di IED in base al funzionamento?",
+          "risposte": [
+            "Command, victim e time operated.",
+            "CWIED,SVIED e EFP.",
+            "Command, victim, SVBIED, UVIED e time operated.",
+            "IED regolamentari e IED convenzionali."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "PAR-020",
+          "testo": "Qual è la distanza di sicurezza “generica” da un UXO?",
+          "risposte": [
+            "100 metri.",
+            "300 metri.",
+            "180 metri.",
+            "330 metri."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "PAR-021",
+          "testo": "Che cosa indica un’area delimitata da cartelli di forma triangolare, con sfondo ROSSO, recante la scritta MINE in BIANCO?",
+          "risposte": [
+            "Campo minato chimico.",
+            "Deposito di mine.",
+            "Campo minato.",
+            "Ordigni inesplosi nell’area delimitata dai cartelli."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "PAR-022",
+          "testo": "Da quali parti essenziali è composta una bomba di aeroplano?",
+          "risposte": [
+            "Corpo bomba e governale.",
+            "Cariche esplosive, corpo bomba, governale e spoletta.",
+            "Corpo bomba, governale e spoletta.",
+            "Carica esplosiva, involucro e spoletta."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "PAR-023",
+          "testo": "Qual è la differenza fra un “dispenser” ed una “cluster bomb”?",
+          "risposte": [
+            "La cluster bomb è un contenitore agganciato al velivolo, mentre il dispenser viene sganciato e successivamente rilascia le submunizioni.",
+            "Non c'è differenza.",
+            "Il dispenser è un contenitore che resta agganciato al velivolo, mentre la clusterbomb viene sganciata e successivamente rilascia le submunizioni.",
+            "Con la cluster bomb, il pilota può selezionare la quantità da sganciare."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "PAR-024",
+          "testo": "Quali sono i compiti degli assessment team (squadre di valutazione)?",
+          "risposte": [
+            "Fornire un accurato riporto dei danni e dei pericoli presenti nell’area/zona di propria competenza.",
+            "Effettuare quanto previsto da ICCS.",
+            "Mettere in essere quanto previsto dal piano",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "PAR-025",
+          "testo": "Che cosa si intende per DETONAZIONE?",
+          "risposte": [
+            "E’ un fenomeno ove avviene la decomposizione  di  un  esplosivo  alla velocità compresa tra 400 e 1000 m/sec.",
+            "E’ quando una munizione è pronto a essere impiegata.",
+            "E’ un fenomeno  di  violenta  decomposizione  di  un  esplosivo  e  si ottiene quando la velocità della reazione  è compresa tra 1000 e 9000 m/sec.",
+            "E’ quando una munizione è pronta allo scoppio."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "PAR-026",
+          "testo": "Da un ordigno inesploso fuoriesce del fumo: quali opportune azioni sono da  intraprendere?",
+          "risposte": [
+            "Posizionarsi sopravvento all’ordigno, indossare la maschera anti-CBRN e informare il WOC/BOC/COD.",
+            "Scappare immediatamente.",
+            "Mantenere la distanza di sicurezza e attendere l’arrivo del Nucleo EOR/EOD.",
+            "Posizionarsi sottovento all’ordigno, indossare la maschera anti-CBRN e informare il WOC/BOC/COD."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "PAR-027",
+          "testo": "Che cosa è indicato nella figura?",
+          "risposte": [
+            "Una granata da fucile.",
+            "Una bomba a mano.",
+            "Un IED.",
+            "Una mina."
+          ],
+          "corretta": 1,
+          "immagine": "imags/2_27.jpg"
+        },
+        {
+          "id": "PAR-028",
+          "testo": "Cosa si intende per IED?",
+          "risposte": [
+            "Ordigno esplosivo assemblato, spolettato, comunque allestito per il funzionamento che è stato sparato, sganciato, lanciato o posizionato in modo da costituire un pericolo alle operazioni, alle installazioni, al personale e ai materiali e che rimane inesploso.",
+            "La detection, l’identificazione, la valuatione sul posto, le procedure di messa in sicurezza, il ricovero e la disattivazione di UXO. Incluso il munizionamento che a causa di danni o deterioramento diventa pericoloso.",
+            "Ordigno, posizionato o assemblato in maniera improvvisata, che contiene elementi distruttivi, letali, nocivi, pirotecnici o incendiari e destinati a distruggere, inabilitare, molestare o turbare. Può essere realizzato con materiali militari, ma solitamente è ideato con componenti non militari.",
+            "Striscia operativa minima che consente l’atterraggio di un determinato tipo di velivolo."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "PAR-029",
+          "testo": "Se identifichi un UXO quale munizionamento da lancio con calibro di 90mm, quale è la distanza di sicurezza?",
+          "risposte": [
+            "300 mt..",
+            "Evacuare la zona circostante a 300mt.",
+            "da 50 a 500 mt..",
+            "150 mt."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "PAR-030",
+          "testo": "Che cosa è indicato nella figura?",
+          "risposte": [
+            "Una bomba di aeroplano.",
+            "Una granata da fucile.",
+            "Una mina.",
+            "Un mortaio."
+          ],
+          "corretta": 1,
+          "immagine": "imags/2_30.jpg"
+        },
+        {
+          "id": "PAR-031",
+          "testo": "Che cosa significa l’acronimo E.O.R.?",
+          "risposte": [
+            "Ritrovamento Ordigni Esplosivi.",
+            "Rastrellamento Ordigni Esplosivi.",
+            "Riconoscimento Ordigni Esplosivi.",
+            "Riscoperta Ordigni Esplosivi."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "PAR-032",
+          "testo": "Quali sono le parti essenziali di una mina?",
+          "risposte": [
+            "Congegno di accensione carica esplosiva e involucro.",
+            "Esplosivo e filo d’inciampo.",
+            "Congegno di accensione e carica esplosiva.",
+            "Piatto di pressione, carica principale."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "PAR-033",
+          "testo": "Se si ritrova un UXO …..",
+          "risposte": [
+            "Ci si avvicina per riconoscerlo e si riporta l'evento al WOC/BOC/COD.",
+            "Lo si può maneggiare per verificare la sua integrità.",
+            "Non ci si avvicina.",
+            "La risposta “C” e bisogna riportare l'evento al WOC/BOC/COD."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "PAR-034",
+          "testo": "Come sono classificate le mine in base alla tipologia (obiettivo)?",
+          "risposte": [
+            "Antiuomo e anticarro.",
+            "Antiuomo e anticamion.",
+            "Antiuomo e antiveicolo.",
+            "Antiuomo e antivelivolo."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "PAR-035",
+          "testo": "Quali sono gli effetti di un’esplosione?",
+          "risposte": [
+            "Effetto dirompente e di frammentazione.",
+            "Effetto luminoso, termico e di frammentazione.",
+            "Effetto meccanico, dirompente e termico.",
+            "Effetto luminoso, termico e meccanico."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "PAR-036",
+          "testo": "I proiettili di artiglieria comprendono:",
+          "risposte": [
+            "Tutte le munizioni con calibro < 20 mm.",
+            "Tutte le munizioni con calibro > 50 mm.",
+            "Tutte le munizioni con calibro > 17,5 mm.",
+            "Tutte le munizioni con calibro = 12,7 mm."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "PAR-037",
+          "testo": "Qual è la distanza di sicurezza da una bomba di aereo?",
+          "risposte": [
+            "200 metri.",
+            "La distanza è di almeno 100 metri.",
+            "Da 300 a 500 metri.",
+            "1000 metri."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "PAR-038",
+          "testo": "Che cosa è indicato nella figura?",
+          "risposte": [
+            "Una bomba di aeroplano.",
+            "Una granata da fucile.",
+            "Una mina.",
+            "Un proiettile da mortaio."
+          ],
+          "corretta": 0,
+          "immagine": "imags/2_38.jpg"
+        },
+        {
+          "id": "PAR-039",
+          "testo": "Che cosa è la spoletta?",
+          "risposte": [
+            "Un dispositivo atto a far funzionare l'ordigno al momento dell'impatto.",
+            "Un dispositivo meccanico atto a far funzionare l'ordigno.",
+            "Un oggetto pirico-chimico atto a far funzionare l'ordigno.",
+            "Un dispositivo che determina il funzionamento dell’ordigno nei tempi e nei modi desiderati."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "PAR-040",
+          "testo": "Chi è responsabile di effettuare l’identificazione di un UXO-IED?",
+          "risposte": [
+            "Personale EOR e team EOD.",
+            "Tutto il personale deve essere in grado di distinguere un oggetto pericoloso (UXO/IED) e stabilirne il relativo grado di pericolo.",
+            "Team EOD per UXO e team IEDD per IED",
+            "Solo il personale qualificato EOR è in grado di effettuare l’identificazione."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "PAR-041",
+          "testo": "Quando si utilizza il metodo \"10 line\"?",
+          "risposte": [
+            "Sempre in caso di minaccia.",
+            "Insieme al METHANE.",
+            "Quando non si è in grado di utilizzare SALUTE e METHANE.",
+            "In presenza di UXO/IED."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "PAR-042",
+          "testo": "Come si suddividono le mine antiuomo in base agli effetti sul bersaglio (efficacia)?",
+          "risposte": [
+            "Azione immediata e azione ritardata.",
+            "Azione locale e azione estesa.",
+            "Azione locale e azione decentrata.",
+            "Convenzionali e non convenzionali."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "PAR-043",
+          "testo": "Cosa indica un’area delimitata da cartelli di forma triangolare, con sfondo ROSSO, recante la scritta GAS MINE in GIALLO?",
+          "risposte": [
+            "Campo minato chimico.",
+            "Deposito di mine.",
+            "Un deposito di gas tossici.",
+            "Tutte le precedenti risposte sono errate: non esistono mine chimiche."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "PAR-044",
+          "testo": "Quali sono le differenti tipologie di cratere?",
+          "risposte": [
+            "Superficiale o camouflet.",
+            "Poco profondo e tanto profondo.",
+            "Superficiale, intermedio e camouflet.",
+            "Superficiale, intermedio e profondo."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "PAR-045",
+          "testo": "Quali sono le 5 \"C\" ?",
+          "risposte": [
+            "Confirm, Clear, Cordon, Control e Call.",
+            "Confirm, Collaborate, Cordon, Control e Call.",
+            "Camouflage, Collaborate, Collect, Communication e Call.",
+            "Communication,  Confirm,  Counter, Cordon e Call."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "PAR-046",
+          "testo": "Quali sono le parti di un razzo?",
+          "risposte": [
+            "Testa di guerra, razzo motore, spoletta e alette stabilizzatrici (se presenti).",
+            "Testa di guerra, sistema di guida, motore, spoletta e governale.",
+            "Carica esplosiva, razzo motore e spoletta.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "PAR-047",
+          "testo": "Quale importante differenza c’è tra un missile e un razzo?",
+          "risposte": [
+            "Nessuna, entrambi vengono lanciati e autopilotati da un booster.",
+            "Il missile dispone, in più, di un sistema di guida.",
+            "Il razzo è progettato per essere lanciato simultaneamente con altri razzi.",
+            "Nessuna."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "PAR-048",
+          "testo": "Quali sono le distanze di sicurezza iniziali per gli IED?",
+          "risposte": [
+            "100 mt. IED di piccole dimensioni.",
+            "200 mt. IED auto.",
+            "400 mt. IED camion.",
+            "Tutte le risposte precedenti sono esatte."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "PAR-049",
+          "testo": "Quali sono i sistemi di funzionamento delle mine?",
+          "risposte": [
+            "A pressione, a rilascio di pressione, a strappo.",
+            "A urto, rilascio di tensione e comandate a distanza.",
+            "Le risposte A e B sono esatte.",
+            "A pressione, ad urto ed comandate a distanza."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "PAR-050",
+          "testo": "Che cosa significa l’acronimo I.E.D.?",
+          "risposte": [
+            "Ordigno non esplosivo.",
+            "Dispositivo esplosivo improvvisato.",
+            "Dispositivo esplosivo intelligente.",
+            "Ordigno esplosivo ionizzante."
+          ],
+          "corretta": 1
+        }
+      ]
+    },
+    {
+      "nome": "Fire Fighting",
+      "domande": [
+        {
+          "id": "FIR-001",
+          "testo": "Di quanti operatori si necessita per l’utilizzo di un estintore carrellato?",
+          "risposte": [
+            "Nr. 1 operatore.",
+            "Nr. 2 operatori.",
+            "Nr. 4 operatori.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-002",
+          "testo": "Nei locali chiusi, con gli estintori ad anidride carbonica, dove deve essere diretto il getto?",
+          "risposte": [
+            "Alla base delle fiamme a \"spazzare\".",
+            "Sempre nella stessa zona a sfruttare l'azione di raffreddamento, fino all'estinzione, per poi procedere oltre.",
+            "Alla sommità delle fiamme per abbassarle e agire successivamente a \"spazzare\" dall'alto verso il basso.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "FIR-003",
+          "testo": "Perché va evitato l'uso dell'acqua come estinguente in incendi di Sodio, Potassio, Magnesio, Zinco, Alluminio?",
+          "risposte": [
+            "Perché conducibili.",
+            "Perché non spegne l’incendio a bassa portata.",
+            "Perché sia a bassa che alta temperatura liberano idrogeno, formando gas infiammabili.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "FIR-004",
+          "testo": "La classe d'incendio come si determina?",
+          "risposte": [
+            "Dal tipo di comburente che partecipa alla combustione.",
+            "Dal colore della fiamma e dal combustibile che brucia.",
+            "Dal tipo di combustibile che partecipa alla combustione.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "FIR-005",
+          "testo": "Quali dei seguenti gas è considerato \"inerte\" e viene utilizzato  come estinguente principalmente in ambienti chiusi?",
+          "risposte": [
+            "Acetilene",
+            "Anidride carbonica (CO2).",
+            "Ossigeno",
+            "Monossido di Carbonio"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-006",
+          "testo": "Quante sono le classi d’incendio secondo la normativa Europea UNI En 2-2005?",
+          "risposte": [
+            "6 ( A-B-C-D-F)",
+            "6 (A-B-C-D-E-F)",
+            "5 (A-B-C-D-E)",
+            "5 (A-B-C-D-F)"
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "FIR-007",
+          "testo": "L'acqua e la schiuma possono essere utilizzate su incendi di apparecchiature elettriche sotto tensione?",
+          "risposte": [
+            "Si, sempre.",
+            "Si purchè si indirizzi il getto alla sommità delle fiamme.",
+            "No, mai.",
+            "Solo in caso di utilizzo su piccole apparecchiature elettriche"
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "FIR-008",
+          "testo": "I gas inerti possono essere utilizzati su incendi di apparecchiature elettriche sotto tensione?",
+          "risposte": [
+            "Solo l'ossigeno (O2).",
+            "Si sempre.",
+            "No mai.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-009",
+          "testo": "Alle classi di fuoco \"B\" e \"C\" quali tipi di combustione appartengono?",
+          "risposte": [
+            "Alla classe di fuoco \"B\" appartengono sostanze chimiche; alla classe di fuoco \"C\" appartengono sostanze gassose.",
+            "Alla classe di fuoco \"B\" appartengono liquidi infiammabili; alla classe di fuoco \"C\" appartengono sostanze gassose.",
+            "Alla classe di fuoco \"B\" e \"C\" appartengono tutti i tipi di incendio.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-010",
+          "testo": "Il principio di spegnimento \"esaurimento di combustibile\" richiede l'uso di quale estinguente?",
+          "risposte": [
+            "Schiuma.",
+            "Anidride carbonica.",
+            "Nessuno.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "FIR-011",
+          "testo": "Quali sono le regole generali a cui si deve attenere un operatore nell'impiego di un estintore portatile a polvere?",
+          "risposte": [
+            "Effettuare un colpo di prova prima dell'avvicinamento al fuoco. Portarsi sottovento rispetto alle fiamme. Avvicinarsi il più possibile al fuoco.",
+            "Portarsi sopravvento rispetto all'incendio. Effettuare  un  colpo  di  prova  erogando  brevemente prima dell'avvicinamento. Dirigere il getto alla base delle fiamme \"a spazzare\" agendo in progressione fino all'estinzione.",
+            "Erogare direttamente alla base delle fiamme, dirigendo il getto al centro del focolare. Quando le fiamme sono basse agire progressivamente intorno.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-012",
+          "testo": "In quanti modi avviene la combustione?",
+          "risposte": [
+            "Sempre con fiamma.",
+            "Sempre con fumo.",
+            "Può avvenire con fiamma e senza fiamma.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "FIR-013",
+          "testo": "L'acqua come agente estinguente è consigliata per incendi di:",
+          "risposte": [
+            "Sostanze quali sodio e potassio.",
+            "Combustibili solidi.",
+            "Apparecchiature sotto tensione.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-014",
+          "testo": "Quale dei seguenti estinguenti non deve essere usato per spegnere una vasca di idrocarburi?",
+          "risposte": [
+            "CO2.",
+            "Polvere.",
+            "Acqua.",
+            "Tutte le precedenti risposte sono errate"
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "FIR-015",
+          "testo": "Qual è il comburente più diffuso in natura?",
+          "risposte": [
+            "Ossigeno",
+            "CO2",
+            "Celluloide",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "FIR-016",
+          "testo": "Qual è la corretta sequenza delle azioni da compiere per l'utilizzo di un estintore?",
+          "risposte": [
+            "Controllare la carica sul manometro, se l'estintore ne è dotato, quindi togliere la sicura, capovolgere l’estintore, effettuare un colpo di prova e, con il vento alle spalle, azionare la leva di erogazione dirigendo il getto alla base del fuoco.",
+            "Togliere la sicura e, con il vento alle spalle, azionare la leva di erogazione dirigendo il getto alla base del fuoco.",
+            "Controllare la carica sul manometro, se l'estintore ne è dotato, quindi togliere la sicura, effettuare un colpo di prova e con il vento alle spalle, azionare la leva di erogazione dirigendo il getto alla base del fuoco.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "FIR-017",
+          "testo": "In quale dei seguenti casi chi ravvisi una delle seguenti situazioni deve prontamente avvisare il Nucleo AI per il ripristino dell'estintore?",
+          "risposte": [
+            "Estintori parzialmente utilizzati",
+            "Estintori sprovvisti di spina di sicurezza.",
+            "Estintori che presentano tagli e screpolature sulle tubazioni di mandata",
+            "Tutte le precedenti risposte sono esatte."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "FIR-018",
+          "testo": "Qual è il numero interno di \"EMERGENZA INCENDIO\" della Base?",
+          "risposte": [
+            "676-2666",
+            "676-2027",
+            "676-2333",
+            "676-2313"
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "FIR-019",
+          "testo": "Durante l'evecuazione di una struttura, laddove le scarse condizioni di visibilità non permettano di individuare la cartellonistica di emergenza, come ci si può orientare per raggiungere le uscite normali o d'emergenza?",
+          "risposte": [
+            "Avvicinandosi alla parete più vicina tastandola con il palmo della mano.",
+            "Avvicinandosi alla parete più vicina tastandola con il dorso della mano.",
+            "Avvicinandosi alla parete più vicina trascinandosi \"dorso a muro\" contro la stessa.",
+            "Le risposte A e c sono corrette."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-020",
+          "testo": "Se si è sviluppato un principio d’incendio a una fotocopiatrice mentre era in funzione, quale dei seguenti estinguenti è più indicato?",
+          "risposte": [
+            "Acqua.",
+            "Schiuma.",
+            "Polvere o CO2.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "FIR-021",
+          "testo": "Qual è il metodo standard utilizzato per le chiamate d'emergenza per allertare i soccorsi in caso d'incendio?",
+          "risposte": [
+            "B.U.T.H.A.N.E.",
+            "M.E.T.H.A.N.E.",
+            "EXERCISE (O \"EX EX EX\")",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-022",
+          "testo": "Quando si scopre un incendio quali informazioni dovranno essere comunicate al Nucleo antincendio?",
+          "risposte": [
+            "Luogo dell'incendio.",
+            "Natura dell'incendio, stato del personale.",
+            "Le risposte A e B sono corrette.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "FIR-023",
+          "testo": "Quando deve essere effettuato il “COLPO DI PROVA” in caso di utilizo di un estintore?",
+          "risposte": [
+            "In fase di avvicinamento all’incendio per non sprecare estinguente.",
+            "In fase di allontanamento dall’incendio per accertarsi che l’estintore ci possa garantire una via di fuga.",
+            "Prima di avvicinarsi all’incendio per iniziare l’estinzione dello stesso.",
+            "Prima di utilizzare lo stesso come “ariete” per sfondare eventuali porte o vetrate."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "FIR-024",
+          "testo": "Qual è la prima cosa da fare quando scopri un principio d’incendio?",
+          "risposte": [
+            "Chiamare subito il numero d’emergenza Antincendi.",
+            "Adoperarsi immediatamente per spegnere il principio d'incendio.",
+            "Correre ed evacuare più velocemente possibile.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-025",
+          "testo": "Quali sono le fasi di sviluppo dell'incendio?",
+          "risposte": [
+            "Fase di innesco/ fase di propagazione/ incendio generalizzato/ estinzione.",
+            "Fase di innesco / incendio generalizzato / estinzione.",
+            "Innalzamento dalla temperatura / incendio generalizzato / bonifica dei locali.",
+            "Corto circuito/incendio generalizzato / sviluppo di fumi e gas."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "FIR-026",
+          "testo": "Quali sono le tipologie di estintori e attrezzature antincendi?",
+          "risposte": [
+            "Portatili, carrellati, unita mobili carrellate.",
+            "Portatili, trasportabili,motorizzati.",
+            "Portatili e statici.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "FIR-027",
+          "testo": "Su quali delle seguenti classi d'incendio possono essere utilizzati gli estintori a polvere?",
+          "risposte": [
+            "CLASSI A-B-C-F",
+            "CLASSI A-B-C e su quadri ed apparecchiature elettriche sino a 1000V.",
+            "Tutte le classi d'incendio",
+            "Le risposte \"A\" e \"B\" sono corrette."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-028",
+          "testo": "Cos’è il “FLASH-OVER”?",
+          "risposte": [
+            "Un lampo di luce accecante che si produce quando le fiamme di un incendio riflettono su una superficie metallica lucida.",
+            "E’ la “FASE DI INCENDIO GENERALizzato”, caratterizzato da un brusco aumento della temperatura e dall’accensione spontanea dei combustibili più vicini al focolaio.",
+            "Illuminazione prodotta dalle fiamme di un incendio dall’alto.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-029",
+          "testo": "Gli incendi di classe “D” di quali materiali consistono?",
+          "risposte": [
+            "Metalli e sostanze chimiche.",
+            "Vernici e idropitture.",
+            "Apparecchiature elettriche.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "FIR-030",
+          "testo": "Quale tipo di combustibile origina un incendio di Classe “F”",
+          "risposte": [
+            "Oli e grassi “Filmanti” (ovvero che producono una pellicola lubrificante laddove vengono utilizzati).",
+            "Oli e grassi a base sintetica.",
+            "Oli e grassi vegetali o animali.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "FIR-031",
+          "testo": "L’estintore “P2” appartiene a:",
+          "risposte": [
+            "Estintore carrellato.",
+            "Unita mobile.",
+            "Estintore portatile.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "FIR-032",
+          "testo": "L’estintore “P50” è un:",
+          "risposte": [
+            "Estintore carrellato.",
+            "Unita mobile.",
+            "Estintore portatile.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "FIR-033",
+          "testo": "Che cos’è un “TA200”?",
+          "risposte": [
+            "Estintore carrellato.",
+            "Unita mobile carrellata.",
+            "Estintore portatile.",
+            "Estintore portatile e carrellato."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-034",
+          "testo": "Qual è il maggior comburente presente in natura?",
+          "risposte": [
+            "L’ossigeno.",
+            "L’anidride carbonica.",
+            "L’elio.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "FIR-035",
+          "testo": "Come sono segnalate le vie di fuga?",
+          "risposte": [
+            "Con cartelli di forma quadrata o rettangolare, pittogramma bianco su fondo rosso.",
+            "Con cartelli di forma circolare, pittogramma nero su fondo bianco e bordo rosso.",
+            "Con cartelli di forma quadrata o rettangolare e pittogramma bianco su fondo verde.",
+            "Con cartelli di forma circolare, pittogramma bianco su fondo azzurro."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "FIR-036",
+          "testo": "Su quali dei seguenti estintori portatili è possibile trovare il manometro per la pressione d’esercizio?",
+          "risposte": [
+            "A CO2 da Kg.05 (T5)",
+            "Su estintori a polvere da pressurizzare",
+            "Su estintori a polvere pressurizzati",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "FIR-037",
+          "testo": "Come si segnala, in un luogo, la presenza di un'attrezzatura antincendio?",
+          "risposte": [
+            "Con cartelli di forma quadrata o rettangolare e pittogramma bianco su fondo verde.",
+            "Con cartelli di forma circolare e pittogramma nero su fondo bianco e bordo rosso.",
+            "Con cartelli di forma circolare e pittogramma bianco su fondo azzurro.",
+            "Con cartelli di forma quadrata o rettangolare e pittogramma bianco su fondo rosso."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "FIR-038",
+          "testo": "Quanto tempo una porta “REI-90” mantiene, in caso d’incendio, la resistenza meccanica, la tenuta ai gas e fumi e l’isolamento termico?",
+          "risposte": [
+            "Minimo 90 sec.",
+            "Minimo 90 min.",
+            "Minimo 9 ore",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-039",
+          "testo": "Quale azione deve fare chiunque avvisti un principio d’incendio?",
+          "risposte": [
+            "Deve intervenire con gli estintori portatili adatti dislocati.",
+            "Deve assolutamente mettere in sicurezza l’area.",
+            "Deve allontanarsi mettendosi in posizione di sicurezza cercando di dare subito l’allarme  secondo le modalità Standard meglio conosciute come METHANE",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "FIR-040",
+          "testo": "Quando si ha un’accensione diretta di un incendio?",
+          "risposte": [
+            "Quando una fiamma, una scintilla o altro materiale incandescente entra a contatto con un materiale combustibile in presenza di ossigeno.",
+            "Quando si procede con volontarietà ad accendere materiale combustibile.",
+            "Quando si satura direttamente un ambiente di gas combustibili",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "FIR-041",
+          "testo": "Quale dei seguenti estinguenti è particolarmente indicato per incendi di classe \"B\"",
+          "risposte": [
+            "Polvere",
+            "CO2",
+            "Schiuma.",
+            "Tutte le precedenti risposte sono corrette."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "FIR-042",
+          "testo": "Cos’è la pala battifuoco?",
+          "risposte": [
+            "Un piccolo mezzo di spegnimento.",
+            "Serve ad alimentare gli incendi.",
+            "Serve ad aprire le porte tagliafuoco.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "FIR-043",
+          "testo": "Che tipo di protezione offrono le porte REI?",
+          "risposte": [
+            "Attiva.",
+            "Passiva.",
+            "Inerte.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-044",
+          "testo": "La segnaletica antincendio è generalmente costituita da:",
+          "risposte": [
+            "Cartello Bianco con pittogramma rosso.",
+            "Cartello quadrangolare rosso con pittogramma bianco.",
+            "Cartello triangolare giallo con pittogramma nero.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-045",
+          "testo": "Per quali delle seguenti classi d'incendio è particolarmente indicato l'utilizzo dell'Acqua come estingente?",
+          "risposte": [
+            "Classe A-B-F",
+            "CLASSE A",
+            "Tutte le classi.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-046",
+          "testo": "Nel caso in cui una persona sia stata avvolta dalle fiamme, quale delle seguenti attrezzature antincendio può essere utilizzata per il suo spegnimento?",
+          "risposte": [
+            "Estintore a polvere.",
+            "Coperta antifiamma.",
+            "Pala battifuoco.",
+            "Le risposte  A e B sono corrette."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-047",
+          "testo": "Cosa si utilizza per spegnere un incendio di apparecchiature elettriche?",
+          "risposte": [
+            "CO2.",
+            "Acqua.",
+            "Schiuma.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "FIR-048",
+          "testo": "Qual é la sostanza estinguente più economica che troviamo in natura?",
+          "risposte": [
+            "L’acqua.",
+            "L’aria.",
+            "CO2.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "FIR-049",
+          "testo": "Cos’è il triangolo del fuoco?",
+          "risposte": [
+            "La combinazione del combustibile, comburente e temperatura.",
+            "La combinazione della temperatura, dell’estinguente e del combustibile.",
+            "La segnaletica antincendio che identifica la presenza di fiamme.",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "FIR-050",
+          "testo": "Quale di questi gas è utilizzato come estinguente?",
+          "risposte": [
+            "Biossido di carbonio.",
+            "Ossigeno.",
+            "Idrogeno",
+            "Tutte le precedenti risposte sono errate."
+          ],
+          "corretta": 0
+        }
+      ]
+    },
+    {
+      "nome": "First Aid",
+      "domande": [
+        {
+          "id": "FIR-001",
+          "testo": "In caso di Assideramento, quale delle seguenti azioni NON bisogna compiere?",
+          "risposte": [
+            "Portarlo al riparo",
+            "lasciarlo addormentare per permettergli di rilassarsi",
+            "Massaggiare le estremità e il torace",
+            "Far bere Caffè o Thè caldo zuccherato"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-002",
+          "testo": "Qual è la prima cosa da fare in caso di ustione?",
+          "risposte": [
+            "Raffreddare con acqua.",
+            "Mettere una pomata.",
+            "Coprire con una garza sterile.",
+            "Distendere l’infortunato."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "FIR-003",
+          "testo": "Quali sono i classici sintimi del colpo di sole",
+          "risposte": [
+            "Pelle calda arrossata e secca",
+            "Polso irregolare, confusione",
+            "Capogiro, temperatura oltre i 40°",
+            "Tutte le risposte sono esatte"
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "FIR-004",
+          "testo": "Cosa indica la sigla A.V.P.U. utilizzata nella valutazione dello stato di coscienza?",
+          "risposte": [
+            "Alert, Verbal, Painful, Unresponse",
+            "Activity, Verbal, Procedure, Unresponse",
+            "Alert, Victim, Painful, Unresponse",
+            "Alert, Voice, Procedure, Unresponse"
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "FIR-005",
+          "testo": "Quando si effettua il massaggio cardiaco esterno bisogna:",
+          "risposte": [
+            "Alternare 10 massaggi e 2 respirazioni.",
+            "Alternare 15 massaggi e 2 respirazioni.",
+            "Non serve la respirazione.",
+            "Alternare 30 massaggi e 2 respirazioni."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "FIR-006",
+          "testo": "Per coprire una ferita dopo la disinfezione:",
+          "risposte": [
+            "É sufficiente un fazzoletto pulito.",
+            "Utilizzare cotone idrofilo.",
+            "Utilizzare una garza sterile.",
+            "Utilizzare una benda."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "FIR-007",
+          "testo": "In cosa consiste la posizione di sicurezza?",
+          "risposte": [
+            "Mettere l’infortunato su un fianco.",
+            "Mettere l’infortunato semiseduto.",
+            "Mettere l’infortunato con le gambe sollevate.",
+            "Lasciare l’infortunato nella posizione in cui si trova."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "FIR-008",
+          "testo": "In caso di corpo estraneo nella trachea quale manovra si utilizza?",
+          "risposte": [
+            "Compressione addominale (manovra di Heimlich).",
+            "L’estensione della testa.",
+            "Sollevare le gambe del ferito.",
+            "La posizione di sicurezza."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "FIR-009",
+          "testo": "In ambito civile, per richiedere l’intervento di un’ambulanza, quale numero si deve chiamare?",
+          "risposte": [
+            "Il 113.",
+            "Il Pronto Soccorso.",
+            "Il 115.",
+            "Il 118."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "FIR-010",
+          "testo": "La rianimazione cardio-polmonare:",
+          "risposte": [
+            "É un compito che spetta al medico.",
+            "Può essere eseguita solo dal medico rianimatore.",
+            "É compito dei medici e degli infermieri.",
+            "Può essere effettuata da chiunque."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "FIR-011",
+          "testo": "La sigla (C) A B C D E, che rappresenta le azioni da effettuare per soccorrere un ferito, indicano:",
+          "risposte": [
+            "Control (Controllo del paziente), Activity (Capacità di reazione), Breathing (Respiro), Circulation (Circolazione sanguigna) Decision (capacità di prendere decisioni), Eventual (Eventuali altre azioni necessarie)",
+            "Circulation (Ricerca di emorragie), Access (Controllo delle vie di accesso), Blindfold (Bendaggio), Control (Controllo della situazione) Disability (Stato di Coscienza) Expert (Attesa dell'arrivo di personale addetto al soccorso)",
+            "Circulation (Ricerca di emorragie), Airways (Vie Aeree), Breathing (Respiro), Circulation (Circolazione sanguigna) Disability (Stato di Coscienza) Exposure (controllo visivo del paziente)",
+            "Tutte le precedenti risposte sono errate"
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "FIR-012",
+          "testo": "Cosa fare in caso la persona da soccorrere manifesti chiari sintomi da distorsione?",
+          "risposte": [
+            "Massaggiare la parte controllandone la capacità di movimento",
+            "Impacchi freddi e immobilizzazione della parte interessata",
+            "Tenere la parte al caldo",
+            "Muovere la parte interessata alla ricerca della posizione meno dolorosa"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-013",
+          "testo": "In un infortunato in arresto circolatorio, se non si è in grado di effettuare la respirazione artificiale:",
+          "risposte": [
+            "É inutile praticare il massaggio cardiaco.",
+            "É indicato praticare il solo massaggio cardiaco.",
+            "É necessario somministrare ossigeno.",
+            "É indicata la manovra di Heimlich."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-014",
+          "testo": "In cosa consiste la manovra di Heimlich?",
+          "risposte": [
+            "É una manovra di estensione della testa.",
+            "É una tecnica per la rimozione di un corpo estraneo nelle vie aeree.",
+            "É una tecnica per la rimozione di corpo estraneo con pinza di Magill.",
+            "É una manovra per la rimozione di un corpo estraneo nel bambino di età inferiore a un anno."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-015",
+          "testo": "Cosa significa la sigla B.L.S.?",
+          "risposte": [
+            "Breathing Life Status",
+            "Basic Life Support",
+            "Best Life System",
+            "Batteriological Lite Safety"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-016",
+          "testo": "Nel TRIAGE SIEVE, a chi viene assegnata la classe T2?",
+          "risposte": [
+            "A personale con Priorità Urgente (Giallo)",
+            "A personale con Priorità di Attesa (Bianco)",
+            "A personale con Priorità Immediata (Rosso)",
+            "A personale con Priorità Ritardata (Verde)"
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "FIR-017",
+          "testo": "La prima cosa da fare in caso di folgorazione è:",
+          "risposte": [
+            "Assicurarsi, prima di intervenire, che l’impianto non sia più sotto tensione.",
+            "Sollevare da terra l’infortunato e cercare di fargli riprendere conoscenza.",
+            "Coprire l’infortunato e cercare di fargli riprendere conoscenza.",
+            "Intervenire subito e praticare la rianimazione cardio-polmonare se necessario."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "FIR-018",
+          "testo": "In caso di lussazione di spalla:",
+          "risposte": [
+            "Tentare immediatamente la riduzione.",
+            "Muovere l’arto il meno possibile, fissarlo con bendaggio e portare l’infortunato in ospedale.",
+            "Fissare l’arto in trazione con una stecca rigida.",
+            "Muovere nelle varie direzioni l’arto superiore per valutare l’entità del danno."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-019",
+          "testo": "Nel triage, quali sono i colori da assegnare al paziente in base all’urgenza da soccorrere?",
+          "risposte": [
+            "Rosso, bianco, nero.",
+            "Rosso, giallo, verde.",
+            "Rosso, verde, bianco.",
+            "Bianco, rosso, verde, giallo."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-020",
+          "testo": "Prima di iniziare la rianimazione cardio-polmonare, in che posizione occorre mettere la vittima?",
+          "risposte": [
+            "In posizione prona (sdraiato a pancia in giù).",
+            "In posizione supina (sdraiato a pancia in su).",
+            "In posizione di sicurezza.",
+            "In posizione semiseduta."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-021",
+          "testo": "Quali sono i 3 sistemi per arrestare un'emorragia?",
+          "risposte": [
+            "Utilizzo dei punti di pressione, Pratica del massaggio cardiopolmonare, B.L.S.",
+            "Utilizzo dei punti di pressione, Utilizzo del bendaggio a pressione, Applicazione del laccio emostatico",
+            "Utilizzo dei punti di pressione, Utilizzo del bendaggio a pressione, Utilizzo del defibrillatore",
+            "Tutte le precedenti risposte sono errate"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-022",
+          "testo": "Nella rianimazione cardio-polmonare a due soccorritori, qual è il rapporto corretto tra le ventilazioni e le compressioni toraciche?",
+          "risposte": [
+            "1 : 5.",
+            "2 : 5.",
+            "1 : 15.",
+            "2 : 30."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "FIR-023",
+          "testo": "L’apertura delle vie aeree è una manovra necessaria per:",
+          "risposte": [
+            "Permettere la respirazione dell’infortunato e la respirazione artificiale.",
+            "Impedire che il contenuto dello stomaco vada nei polmoni.",
+            "Valutare lo stato di coscienza.",
+            "Valutare l’attività cardiocircolatoria."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "FIR-024",
+          "testo": "In caso di trauma al collo o colonna vertebrale, l’infortunato può essere rimosso?",
+          "risposte": [
+            "Sempre.",
+            "Solo se cosciente.",
+            "Solo se estremamente necessario per allontanarlo da un pericolo imminente.",
+            "Mai."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "FIR-025",
+          "testo": "Nel TRIAGE SIEVE, a chi viene assegnata la classe T1?",
+          "risposte": [
+            "A personale con Priorità Urgente (Giallo)",
+            "A personale con Priorità di Attesa (Bianco)",
+            "A personale con Priorità Immediata (Rosso)",
+            "A personale con Priorità Ritardata (Verde)"
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "FIR-026",
+          "testo": "Il TRIAGE SIEVE,  effettuato per valutare i pazienti in relazione alla loro necessità di trattamento, deve essere un metodo…",
+          "risposte": [
+            "Statico",
+            "Dinamico",
+            "Da effettuare solo in caso di incendio",
+            "Da effettuare solo sul personale in stato di incoscienza"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-027",
+          "testo": "Nel TRIAGE SIEVE, a chi viene assegnata la classe T3?",
+          "risposte": [
+            "A personale con Priorità Urgente (Giallo)",
+            "A personale con Priorità di Attesa (Bianco)",
+            "A personale con Priorità Immediata (Rosso)",
+            "A personale con Priorità Ritardata (Verde)"
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "FIR-028",
+          "testo": "Quali sono le azioni immediate da intraprendere in caso di colpo di calore dopo aver chiamato i soccorsi?",
+          "risposte": [
+            "Distenderlo in posizione di sicurezza evitando ogni movimento.",
+            "Far distendere la persona in una zona fresca o ombreggiata, slacciare gli abiti, fargli tenere le gambe sollevate, praticare impacchi  freddi sulla fronte e sul petto e far bere acqua leggermente salata",
+            "somministrare bevande fredde e farlo distendere in posizione di sicurezza.",
+            "Far distendere la persona in una zona fresca o ombreggiata, con gli arti inferiori sollevati, se conscio somministrare acqua coprendolo per evitare eventuali shock."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-029",
+          "testo": "In quale caso è indicato effettuare la manovra di Heimlich?",
+          "risposte": [
+            "Folgorazione.",
+            "Soffocamento.",
+            "Emorragia.",
+            "Svenimento."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-030",
+          "testo": "Come si può presentare un arto con sospetta frattura?",
+          "risposte": [
+            "Dolente.",
+            "Gonfio.",
+            "Deforme.",
+            "Tutte le precedenti risposte sono esatte."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "FIR-031",
+          "testo": "Quali sono i possibili effetti nocivi del Freddo Intenso?",
+          "risposte": [
+            "Emorragia",
+            "Congelamento",
+            "Assideramento",
+            "Le risposte B e C sono corrette"
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "FIR-032",
+          "testo": "Quali sono le possibili tipologie di ustioni?",
+          "risposte": [
+            "Termica, Elettrica e chimica",
+            "Termica, differita e immediata",
+            "Estesa, parziale e immediata",
+            "Tutte le risposte sono errate"
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "FIR-033",
+          "testo": "Nelle ustioni, quali problematiche indirette possono emergere?",
+          "risposte": [
+            "Shock e disidratazione",
+            "Perdita dello stato di coscienza ed epistassi",
+            "Frattura e Lussazione",
+            "Shock anafilattico"
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "FIR-034",
+          "testo": "In caso di ustione, quando è presente cute arrossata senza vesciche, il grado è:",
+          "risposte": [
+            "Primo",
+            "Secondo.",
+            "Terzo.",
+            "Complicato."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "FIR-035",
+          "testo": "Nella vittima in congelamento è necessario:",
+          "risposte": [
+            "Dare da bere bevande alcoliche.",
+            "Dare da bere acqua.",
+            "Dare da mangiare.",
+            "Coprire con coperte di lana."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "FIR-036",
+          "testo": "In caso di ustione, quando sono presenti le vesciche, il grado è:",
+          "risposte": [
+            "Primo.",
+            "Quarto.",
+            "Secondo.",
+            "Terzo."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "FIR-037",
+          "testo": "Quali sono i classici sintomi di una lussazione?",
+          "risposte": [
+            "Copiosa emorragia esterna e dolore",
+            "Deformazione dell’arto, dolore e limitazione nei movimenti",
+            "Disidratazione e perdita di calore corporeo",
+            "Intorpidimento e perdita di coscienza"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-038",
+          "testo": "In caso di annegamento cosa occorre fare?",
+          "risposte": [
+            "Alzare l’infortunato per portarlo al mezzo di soccorso.",
+            "Dare da bere al soggetto.",
+            "Attendere i soccorsi",
+            "Iniziare immediatamente il BLS"
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "FIR-039",
+          "testo": "Il TRIAGE SIEVE è un metodo utilizzato per..",
+          "risposte": [
+            "Raccogliere le informazioni dal personale presente prima di intervenire",
+            "Soccorrere prima il personale con danni lievi",
+            "Correggere eventuali diagnosi errate",
+            "valutare i pazienti in relazione alla loro necessità di trattamento"
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "FIR-040",
+          "testo": "In quali casi si possono interrompere le manovre di rianimazione cardio-polmonare?",
+          "risposte": [
+            "Arrivo dei Soccorsi",
+            "Esaurimento del soccorritore.",
+            "Ripresa delle funzioni vitali (presenza di respiro e circolo spontanei).",
+            "Tutte le precedenti risposte sono esatte."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "FIR-041",
+          "testo": "Quando da una ferita fuoriesce sangue rosso vivo a zampillo trattasi di:",
+          "risposte": [
+            "Emorragia venosa.",
+            "Emorragia arteriosa.",
+            "Emorragia interna.",
+            "Emorragia capillare."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-042",
+          "testo": "Nel caso di un’emorragia arteriosa dove va posizionato il laccio emostatico?",
+          "risposte": [
+            "A valle della ferita.",
+            "A monte della ferita.",
+            "Sopra la ferita.",
+            "É indifferente."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-043",
+          "testo": "In caso di un’emorragia venosa quale provvedimento adotteresti per fermarla?",
+          "risposte": [
+            "Applicherei un laccio emostatico a monte della ferita.",
+            "Applicherei un laccio emostatico a valle della ferita.",
+            "Benderei la ferita",
+            "Effettuerei una compressione sulla ferita e se insufficiente a valle della ferita."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "FIR-044",
+          "testo": "Per valutare l'attività respiratoria, si deve:",
+          "risposte": [
+            "Verificare il polso della vittima, controllare lo stato di coscienza e la presenza di iper sudorazione",
+            "Guardare se il torace si espande, Ascoltare dalla bocca della vittima se ci sono rumori respiratori e Sentire sulla tua guancia se c'è passaggio d'aria",
+            "Controllare unicamente se il torace si espande",
+            "E' un'operazione effettuabile solo da personale sanitario"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-045",
+          "testo": "In caso di frattura ad un arto quali sono I provvedimenti immediati da adottare?",
+          "risposte": [
+            "Fasciare con bende l’arto fratturato.",
+            "Bloccare l’arto nella posizione in cui si trova con stecche o materiale idoneo d’emergenza (rami, legno, metallo, ecc.).",
+            "Movimentare l’arto fino a quando si placa il dolore.",
+            "Cercare di ridurre ad ogni costo la frattura (riportare l’arto nella sua posizione normale)."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "FIR-046",
+          "testo": "Il tuo collega è stato ferito all’addome con fuoriuscita dei visceri, quali sono le azioni da intraprendere?",
+          "risposte": [
+            "Riposizionare i visceri all’interno della cavità addominale e successivamente fasciare.",
+            "Disinfettare la ferita ed i visceri ed effettuare   le operazioni di cui al punto “a”.",
+            "Utilizzando un telo pulito avvolgere i visceri fuoriusciti, non posizionandoli all’interno della cavità addominale, quindi ricoprire il tutto con un altro telo pulito.",
+            "Sezionare con materiale di fortuna i visceri fuoriusciti e coprire l’addome con telo sterile."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "FIR-047",
+          "testo": "Dopo quanto tempo, di solito, avviene l'arresto cardio-circolatorio a seguito di apnea?",
+          "risposte": [
+            "Un'ora",
+            "15 - 20 minuti",
+            "6 - 7 minuti",
+            "2 - 3 minuti"
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "FIR-048",
+          "testo": "Come si presenta un'emorragia venosa?",
+          "risposte": [
+            "Continua, di colore rosso scuro",
+            "A zampilli di colore rosso chiaro",
+            "Solo sugli arti inferiori",
+            "Solo in presenza di ferita all'addome"
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "FIR-049",
+          "testo": "Quando si applica un laccio emostatico bisogna ricordarsi di:",
+          "risposte": [
+            "Annotare l'orario di applizazione del laccio",
+            "Cambiare il laccio ogni ora",
+            "Allentare il laccio ogni 25 minuti",
+            "Applicare il laccio direttamente sulla ferita"
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "FIR-050",
+          "testo": "Il trasporto di un ferito deve tener conto di:",
+          "risposte": [
+            "Tipologia e lunghezza del percorso",
+            "Capacità del ferito di camminare",
+            "Stato di coscienza o incoscienza",
+            "Tutte le precedenti risposte sono esatte"
+          ],
+          "corretta": 3
+        }
+      ]
+    },
+    {
+      "nome": "C.B.R.N.",
+      "domande": [
+        {
+          "id": "CBR-001",
+          "testo": "Quanto tempo hai (Standard NATO) per indossare la tua maschera anti-CBRN?",
+          "risposte": [
+            "6 secondi per indossarla, altri 9 per aggiustare i tiranti.",
+            "9 secondi per indossarla, altri 6 per completare la vestizione alzando il cappuccio della tuta CBRN.",
+            "9 secondi per indossarla, altri 15 per aggiustare i tiranti e alzare il cappuccio della tuta CBRN.",
+            "15 secondi."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "CBR-002",
+          "testo": "Quali sono gli stati di vestizione CBRN:",
+          "risposte": [
+            "1 – 2 – 3 – 4",
+            "Basso, medio, alto, molto alto.",
+            "Molto basso, basso, medio, alto.",
+            "0 – 1 – 2 – 3 – 4"
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "CBR-003",
+          "testo": "Quando usi l’autoiniettore di ATROPINA SOLFATO\\OBIDOSSIMA CLORURO?",
+          "risposte": [
+            "10 minuti dopo aver manifestato i primi sintomi da intossicazione da  nervino.",
+            "Se il mio indumento CBRN è contaminato.",
+            "Se la cartina rivelatrice M72 vira al giallo.",
+            "All’insorgere dei primi sintomi d’intossicazione da Nervino."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "CBR-004",
+          "testo": "Dopo quanto tempo puoi misurare l’ampiezza massima della nube di un’esplosione nucleare.",
+          "risposte": [
+            "Dopo 10 minuti dall’esplosione.",
+            "Dopo 15 minuti dall’esplosione.",
+            "Dopo 5 minuti dall’esplosione.",
+            "Subito dopo l’esplosione."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "CBR-005",
+          "testo": "Quali sono i livelli di minaccia CBRN ?",
+          "risposte": [
+            "Molto basso, basso, medio, alto.",
+            "Basso, medio, alto.",
+            "Basso, medio, significativo, alto.",
+            "Nessuno, molto basso, basso, medio, alto, molto alto, reale."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "CBR-006",
+          "testo": "Un suono di sirena modulato e intermittente significa:",
+          "risposte": [
+            "Cessato allarme.",
+            "Attacco aereo.",
+            "Attacco CBRN.",
+            "Le risposte A e B sono esatte."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "CBR-007",
+          "testo": "La cartina rilevatrice è efficace per rilevare aggressivi chimici in quale stato fisico?",
+          "risposte": [
+            "Liquido o aerosol. (goccioline)",
+            "Gassoso.",
+            "Solido, liquido, aerosol e gassoso.",
+            "Le risposte A e B sono esatte."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "CBR-008",
+          "testo": "La sequenza-procedura corretta per indossare la maschera CBRN è:",
+          "risposte": [
+            "Chiudere gli occhi, trattenere il respiro, indossare lamaschera, soffiare forte, chiudere l’apertura del filtro e inspirare per controllare la tenuta, aprire gli occhi e respirare normalmente.",
+            "Trattenere il respiro con gli occhi  chiusi, indossare la maschera, aggiustare i cinghiaggi, espirare forte, chiudere l’apertura del filtro ed inspirare per controllare la tenuta, aprire gli occhi, respirare normalmente, aggiustare il cappuccio della tuta (tutto questo in 9+6 secondi), gridare “Gas-Gas-Gas”, effettuare buddy-buddy checks.",
+            "Indossare la maschera, chiudere l’apertura del filtro e inspirare per controllare la tenuta, aggiustare i cinghiaggi, respirare normalmente, effettuare buddy-buddy checks.",
+            "La sola cosa importante è di indossare la maschera in 9 secondi."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "CBR-009",
+          "testo": "La Lewisite  odora come?",
+          "risposte": [
+            "Mandorle amare.",
+            "Canfora, frutta.",
+            "Geranio.",
+            "Nessuno, perchè la Lewisite è inodore."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "CBR-010",
+          "testo": "Il tempo d’azione degli aggressivi chimici “Tossici Sistemici” è:",
+          "risposte": [
+            "A lungo termine.",
+            "Immediato tranne per le Arsine per le quali è differito.",
+            "Immediato tranne per le Ossime per le quali è differito.",
+            "Differito, alcune ore."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "CBR-011",
+          "testo": "Con l’Indumento CBRN, come indossi l’elmetto?",
+          "risposte": [
+            "Sopra il cappuccio.",
+            "Sotto il cappuccio.",
+            "Non hai bisogno di indossare l’elmetto.",
+            "Qualsiasi modo è corretto."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "CBR-012",
+          "testo": "Qual è l'odore caratteristico dei V-GAS (Amitoni)",
+          "risposte": [
+            "Frutta",
+            "Mandorle amarre",
+            "Pesce Marcio",
+            "Sono inodore"
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "CBR-013",
+          "testo": "I Lacrimogeni, gli Starnutatori e i Vomitatori sono aggressivi chimici:",
+          "risposte": [
+            "Incapacitanti.",
+            "Irritanti.",
+            "Soffocanti.",
+            "Vescicanti."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "CBR-014",
+          "testo": "Dopo un attacco di Acido Cianidrico e Cloruro di cianogeno cosa è indispensabile fare:",
+          "risposte": [
+            "Utilizzare l’autoiniettore per il trattamento contro gli aggressivi nervini.",
+            "La decontaminazione dell’indumento CBRN.",
+            "La sostituzione del filtro CBRN.",
+            "Le precedenti risposte sono sbagliate."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "CBR-015",
+          "testo": "Il primo segno di un esplosione nucleare è:",
+          "risposte": [
+            "La contaminazione radiologica.",
+            "Un forte vento caldo.",
+            "Un lampo accecante.",
+            "Una forte esplosione."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "CBR-016",
+          "testo": "Il filtro CBRN non protegge da:",
+          "risposte": [
+            "Vapori di mercurio e Anidride carbonica.",
+            "Ammoniaca e monossido di carbonio.",
+            "Agenti biologici.",
+            "A e B."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "CBR-017",
+          "testo": "Se il vostro Indumento CBRN viene contaminato da aggressivi chimici allo stato liquido, entro quanto tempo dovete  decontaminarlo (decontaminazione immediata)?",
+          "risposte": [
+            "Nervini 6 ore, altri 8 ore.",
+            "6 ore (vescicanti inspessiti 3 ore).",
+            "24 ore.",
+            "15 minuti."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "CBR-018",
+          "testo": "Che cosa identifica un triangolo bianco con una la scritta nera “atom”?",
+          "risposte": [
+            "Contaminazione radiologica.",
+            "Contaminazione biologica.",
+            "Contaminazione chimica.",
+            "Mine inesplose."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "CBR-019",
+          "testo": "Come si misura l’ampiezza angolare di una nube atomica utilizzando il “Metodo Empirico”?",
+          "risposte": [
+            "Immagine della nube coperta dal dito indice sarà pari a 30 millesimi; dall’indice e medio sarà pari a 70 millesimi; dall’indice, medio e anulare sarà pari a 100 millesimi.",
+            "Immagine della nube coperta dal dito indice sarà pari a 30 gradi; dall’indice, medio e anulare sarà pari a 70 gradi; dalla mano aperta sarà pari a 100 gradi.",
+            "Immagine della nube coperta dall’indice, medio, anulare e mignolo sarà pari a 125 millesimi; dal pugno chiuso sarà pari a 140 millesimi; dalla mano aperta sarà pari a 340 millesimi.",
+            "Le risposte A e C sono esatte."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "CBR-020",
+          "testo": "Qual è la durata massima del filtro M90?",
+          "risposte": [
+            "10 anni sigillato e 20 mesi aperto.",
+            "42 ore, per ogni tipo di attacco.",
+            "42 ore continuative o frazionate  di attacco con gas nervino, comunque non oltre 5 giorni dall’inizio dell’attacco e cambio filtro, dopo un attacco di acido cianidrico o cloruro di cianogeno.",
+            "6 ore, per ogni tipo di attacco."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "CBR-021",
+          "testo": "Quali sono i 4 tipi di microorganismi che trovi negli agenti biologici?",
+          "risposte": [
+            "Batteri, funghi, richetsie, sarin.",
+            "Batteri, funghi, richetsie, virus.",
+            "Batteri, ossime, richetsie, virus.",
+            "Batteri, funghi, tossine, arsine."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "CBR-022",
+          "testo": "Cosa è un R.D.D.?",
+          "risposte": [
+            "Una tipo di mina chimica.",
+            "Un  tipo di decontaminante.",
+            "Un dispositivo che disperde materiale radioattivito per mezzo di esplosivo.",
+            "Un dispositivo che disperde materiale chimico."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "CBR-023",
+          "testo": "Cosa significa l’acronimo R.E.D.?",
+          "risposte": [
+            "Dispositivo esplosivo radiologico.",
+            "Dispositivo di emissione di radiazioni.",
+            "Disattivazione esplosivi radiologici.",
+            "Le precedenti risposte sono sbagliate."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "CBR-024",
+          "testo": "Quali sono i tre livelli di decontaminazione?",
+          "risposte": [
+            "Individuale, rapida e dettagliata.",
+            "Pesante, media e leggera.",
+            "Individuale, rapida e dettagliata.",
+            "Immediata, Operativa e Approfondita"
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "CBR-025",
+          "testo": "A cosa equivale la potenza di un ordigno nucleare di 18 Kt?",
+          "risposte": [
+            "Alla potenza prodotta dall’esplosione di diciottomila  tonnellate di tritolo.",
+            "Alla potenza prodotta dall’esplosione di diciotto tonnellate di tritolo.",
+            "Alla potenza prodotta dall’esplosione di diciottomila chili di tritolo.",
+            "Alla potenza prodotta dall’esplosione di diciotto milioni di tonnellate di tritolo."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "CBR-026",
+          "testo": "Quanti tipi di scoppio nucleare conosci?",
+          "risposte": [
+            "Scoppio di superficie.",
+            "Scoppio Aereo.",
+            "Scoppio Sotterraneo.",
+            "Sono tutte esatte"
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "CBR-027",
+          "testo": "L'esplosione di un ordigno nucleare genera l'emissione di vari tipi di onde elettromagnetiche quali:",
+          "risposte": [
+            "Gamma e neutroni.",
+            "Alfa.",
+            "Alfa e beta.",
+            "A e B sono esatte."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "CBR-028",
+          "testo": "In quale stato fisico si possono trovare gli aggressivi chimici?",
+          "risposte": [
+            "Liquido e aerosolo.",
+            "Solido, liquido, gassoso.",
+            "Solido, liquido.",
+            "Liquido"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "CBR-029",
+          "testo": "Un suono di sirena modulato significa:",
+          "risposte": [
+            "Cessato allarme.",
+            "Attacco Fall-Out.",
+            "Attacco CBRN.",
+            "Attacco aereo."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "CBR-030",
+          "testo": "Quanti auto-iniettori di atropina solfato-obidossima ci sono all’interno del corredo complementare NBC?",
+          "risposte": [
+            "0.",
+            "2.",
+            "3.",
+            "4."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "CBR-031",
+          "testo": "Cosa si intende per guerra biologica?",
+          "risposte": [
+            "L'uso intenzionale da parte di un nemico, di agenti chimici, per causare la morte e la malattia tra il personale, gli animali, le piante, o più raramente per deteriore materiale.",
+            "L'uso intenzionale di materiale radioattivo per causare la morte del nemico.",
+            "La A e la D sono esatte.",
+            "L'uso intenzionale da parte di un nemico, di germi o tossine, per causare la morte e la malattia tra il personale, gli animali, le piante, o più raramente per deteriore materiale."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "CBR-032",
+          "testo": "le particelle Alfa sono pericolose…",
+          "risposte": [
+            "A causa del potere di penetrazione.",
+            "Soprattutto se ingerite",
+            "perché si spostano in linea retta per chilometri.",
+            "Le risposte A e B sono esatte."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "CBR-033",
+          "testo": "I “V-GAS” sono:",
+          "risposte": [
+            "Non persistenti.",
+            "Persistenti.",
+            "Gas nervini persistenti.",
+            "Gas nervini non persistenti."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "CBR-034",
+          "testo": "Quanti sono i principali effetti di una esplosione nucleare?",
+          "risposte": [
+            "9.",
+            "2.",
+            "3.",
+            "7."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "CBR-035",
+          "testo": "Cosa è l'antrace?",
+          "risposte": [
+            "Una malattita infettiva derivante da un battero",
+            "Una malattia infettiva derivante da un virus",
+            "Un fungo",
+            "Una tossina"
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "CBR-036",
+          "testo": "Cosa significa l’acronimo T.I.M.",
+          "risposte": [
+            "Telecom Italia Mobile",
+            "Mine tossiche improvvisate.",
+            "Le risposte A e B sono esatte.",
+            "Materiale tossico industriale."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "CBR-037",
+          "testo": "Se il livello di minaccia CBRN è MEDIO:",
+          "risposte": [
+            "Stati o Organizzazioni coinvolti sono considerati possessori di armi o dispositivi CBRN con la capacità o l’intenzione di utilizzarle.",
+            "Un attacco CBRN è in corso.",
+            "Stati o Organizzazioni coinvolti potrebbero  possedere armi o dispositivi CBRN ma non vi sono indicazioni nell’intento di utilizzo.",
+            "É previsto un attacco CBRN."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "CBR-038",
+          "testo": "Cosa significa l’acronimo T.I.B.",
+          "risposte": [
+            "Tossico indistriale biologico.",
+            "Tossico industriale batteriologico.",
+            "Bomba a tempo improvvisata.",
+            "Le risposte A e B sono errate."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "CBR-039",
+          "testo": "Se il livello di minaccia T.I.M.è MEDIO?",
+          "risposte": [
+            "Sebbene il rilascio TIM sia possibile, le infrastrutture dei siti industriali ed i livelli di sicurezza sono ritenuti robusti.",
+            "Incidente T.I.M. in corso.",
+            "Probabile incidente T.I.M. entro un determinato periodo di tempo.",
+            "Sussiste un aumento del rischio di rilascio TIM a causa del degrado delle infrastrutture dei siti industriali e/o della diminuzione dei livelli di sicurezza."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "CBR-040",
+          "testo": "Un suono continuo di sirena cosa significa:",
+          "risposte": [
+            "Cessato allarme.",
+            "Allarme aereo.",
+            "Allarme CBRN.",
+            "Allarme Fall-Out."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "CBR-041",
+          "testo": "Quanto tempo bisogna attendere prima di iniettarsi il secondo auto-iniettore di atropina-obidossima?",
+          "risposte": [
+            "10 minuti.",
+            "10 secondi.",
+            "5 minuti.",
+            "50 minuti."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "CBR-042",
+          "testo": "Se sei dentro ad un‘area contaminata, dopo quanto tempo devi cambiare la tua tuta protettiva CBRN?",
+          "risposte": [
+            "Dopo 24 ore.",
+            "Dopo 12 ore.",
+            "Dopo 42 ore.",
+            "Dopo 15 giorni."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "CBR-043",
+          "testo": "Quali sono i tre fondamenti della difesa Chimica, biologica, Radiologica e Nucleare?",
+          "risposte": [
+            "Evitare la contaminazione, rilevamento e decontaminazione",
+            "Evitare la contaminazione, protezione e decontaminazione.",
+            "Protezione, rilevamento e decontaminazione.",
+            "Evitare la contaminazione, protezione e rilevamento."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "CBR-044",
+          "testo": "Per quanto tempo applichi pressione quando usi l’autoiniettore? (ATROPINA)",
+          "risposte": [
+            "10  minuti.",
+            "1 minuto.",
+            "10 secondi",
+            "50 secondi."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "CBR-045",
+          "testo": "Come vengono classificati gli aggressivi chimici in relazione alla velocità di azione sull'organismo?",
+          "risposte": [
+            "Letalil o non Letali",
+            "Ritardanti o Incapacitanti",
+            "Zero, Uno, Due o Tre",
+            "Immediata o Differita"
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "CBR-046",
+          "testo": "Quali sono gli aggressivi chimici vescicanti?",
+          "risposte": [
+            "Sarin e Amitoni.",
+            "Iprite, azotiprite, lewisite e ossime del fosgene.",
+            "Acido cianidrico e cloruro di cianogeno.",
+            "Ossime, Tabun e Soman"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "CBR-047",
+          "testo": "A quale categoria di agressivo chimico appartiene il Sarin (GB)?",
+          "risposte": [
+            "Tossici sistemici.",
+            "Vescicanti.",
+            "Nervini.",
+            "Soffocanti."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "CBR-048",
+          "testo": "Quali, tra i seguenti, sono sintomi tipici provocati da un aggressivo chimico “Vescicante”?",
+          "risposte": [
+            "Nausea, vomito, mal di testa.",
+            "Arrossamento della cute, tachicardia, arresto della respirazione, morte.",
+            "Arrossamento della cute, comparsa di vesciche con successiva rottura delle stesse, forti dolori.",
+            "Le risposte A e C sono esatte."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "CBR-049",
+          "testo": "Per il massimo effetto di radiazioni che scoppio nucleare useresti?",
+          "risposte": [
+            "Scoppio sotterraneo.",
+            "Scoppio di superficie.",
+            "Le risposte A e B sono esatte.",
+            "Scoppio Aereo."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "CBR-050",
+          "testo": "In cosa consiste l’equipaggiamento di protezione individuale CBRN?",
+          "risposte": [
+            "Indumento permeabile protettivo, maschera anti-CBRN, filtro, corredo complementare NBC, cartine rivelatrici e kit decontaminazione.",
+            "Corredo complementare NBC, maschera anti-CBRN.",
+            "Maschera anti-CBRN.",
+            "Maschera anti-CBRN, filtro ed elmetto."
+          ],
+          "corretta": 0
+        }
+      ]
+    },
+    {
+      "nome": "Security",
+      "domande": [
+        {
+          "id": "SEC-001",
+          "testo": "Quale direttiva internazionale disciplina la gestione di P.O.W.",
+          "risposte": [
+            "SMA - ORD - 042",
+            "Convenzioni di Ginevra",
+            "AJP 3.8.1",
+            "Tutte le precedenti risposte sono errate"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "SEC-002",
+          "testo": "Il Sistema di Sicurezza si suddivide in:",
+          "risposte": [
+            "Sicurezza fisica, Sicurezza Personale, Information Assurance (INFOSEC, COMSEC e Cyber Security) e Sicurezza dei Documenti,",
+            "C3, Sicurezza, Comunicazioni, Assessment, Triage, Trattamento, Trasporti.",
+            "Triage, INFOSEC, Difesa Attiva, Difesa Passiva, Ripristino.",
+            "Identificazione degli avvertimenti, Lavaggio mani, Maschere protettive."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "SEC-003",
+          "testo": "Cosa sono le Misure Precauzionali?",
+          "risposte": [
+            "Disposizioni impartite dal Comandante di Stormo in caso di minaccia. Tali Misure, attuabili al livello locale interessano unicamente il settore Force Protection del sedime.",
+            "Attività preventive relative al settore antinfortunistico",
+            "Distanze di sicurezza da mantenere in caso di rinvenimento di un cratere",
+            "Azioni predefinite, immediatamente disponibili per l’approvazione da parte del Consiglio e attuate dalle Nazioni e/o comandi NATO a tutti i livelli"
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "SEC-004",
+          "testo": "Come si divide un’area di sicurezza contenente informazioni di classifica superiore a “NATO Confidential”?",
+          "risposte": [
+            "Area riservata “A”, Area riservata “B”, area riservata “D”.",
+            "Area segreta 0, area segreta 1.",
+            "NATO Area Class I e NATO Area Class II.",
+            "Area protetta “Confidential”, Area protetta “Secret”."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "SEC-005",
+          "testo": "Cosa implica la dichiarazione di Contro-Aggresione?",
+          "risposte": [
+            "L'attivazione delle predisposizioni effettuate in  previsione di un attacco diretto al sedime aeroportuale.",
+            "L'autorizzazione all’impiego delle forze NATO contro le Nazioni che conducono o supportano l'aggressione ad un paese NATO",
+            "La generazione di un Piano di Difesa Locale alternativo",
+            "Tutte le precedenti risposte sono esatte"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "SEC-006",
+          "testo": "Quali sono le misure minime di “Physical security”?",
+          "risposte": [
+            "Unità cinofile, torrette d’osservazione, indurimento dei punti sensibili.",
+            "Recinzione perimetrale, sistema antintrusione, controlli all’ingresso, TVCC, luci da identificazione.",
+            "Camouflage, HESCO Bastion e sacchetti di sabbia.",
+            "Tutte le risposte sono corrette."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "SEC-007",
+          "testo": "Quando viene dichiarato lo stato di allertamento DELTA ?",
+          "risposte": [
+            "Quando si siano ricevute informazioni relative ad un imminente atto terroristico diretto verso un obiettivo specifico",
+            "Nell’area immediatamente vicina al luogo in cui si è verificato un attacco terroristico",
+            "In caso di un lieve incremento della possibilità di attacco terroristico al sedime",
+            "Le risposte A e B sono corrette"
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "SEC-008",
+          "testo": "Come è gestito l’accesso ad un’area sensibile o classificata?",
+          "risposte": [
+            "Tramite pass personali e nomi specificati su di una lista d’accesso autorizzato.",
+            "Documento militare",
+            "Password, riconoscimento a vista.",
+            "Tutte le precedenti risposte sono errate"
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "SEC-009",
+          "testo": "In base a quanto previsto dalle Convenzioni di Ginevra, il prigioniero di guerra deve:",
+          "risposte": [
+            "Essere trattenuto in isolamento fino a quando non fornirà le informazioni richieste",
+            "Essere inserito in un luogo sicuro ma non potrà produrre o ricevere corrispondenza",
+            "Essere immediatamente trasportato in un carcere di massima sicurezza",
+            "Essere disarmato e tutto il materiale da guerra, tranne quello per la sua protezione individuale deve essere confiscato"
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "SEC-010",
+          "testo": "L’accesso ad informazioni classificate è consentito a:",
+          "risposte": [
+            "Tutto il personale in possesso di un NOS adeguato",
+            "Tutto il personale in possesso di un NOS adeguato e con “need-to-know”.",
+            "Tutto il personale in possesso di pass valido per un’area riservata, ma senza “need-to-know”.",
+            "Le risposte B e C sono corrette."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "SEC-011",
+          "testo": "Cosa è la Cyber Security?",
+          "risposte": [
+            "La sicurezza fisica del sedime assicurata da apparati cibernetici",
+            "La protezione delle informazioni e dell’infrastruttura di rete all’interno dello spazio cibernetico",
+            "Il mantenimento di un database del personale autorizzato all'accesso al sedime",
+            "Tutte le precedenti risposte sono errate"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "SEC-012",
+          "testo": "Cosa è la Communication Security (COMSEC) ?",
+          "risposte": [
+            "La gestione delle frequenze radio",
+            "La gestione ed il controllo delle informazioni e dell’infrastruttura di rete all’interno dello spazio cibernetico",
+            "Il controllo delle notizie apparse nelle principali testate giornalistiche inerenti la Forza Armata",
+            "Si intende l’insieme delle misure di sicurezza fisica, tecnica e procedurale contro le emanazioni compromettenti dei sistemi informativi e di comunicazione"
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "SEC-013",
+          "testo": "Cosa significa Tempestizzare un sistema o un apparato (PC) ?",
+          "risposte": [
+            "Evitare le emissioni elettromagnetiche captabili dall’esterno con apposite apparecchiature.",
+            "Rendere l'apparato non connesso al World Wide Web",
+            "Garantire la sicurezza fisica dell'apparato attraverso apposite casseforti",
+            "Tutte le precedenti risposte sono errate"
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "SEC-014",
+          "testo": "Come si suddivide l'Information Assurance (Sicurezza dell'Informazione) ?",
+          "risposte": [
+            "Physical Security, Communication Security e Cyber Security",
+            "Physical Security, NOS e Cyber Security",
+            "P.O.W., NOS  e CSC",
+            "Sicurezza fisica e Sicurezza Personale."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "SEC-015",
+          "testo": "Quale è il principio base del Sistema di Sicurezza?",
+          "risposte": [
+            "Verifica delle Procedure",
+            "Controllo",
+            "Riservatezza",
+            "Standardizzazione"
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "SEC-016",
+          "testo": "Quali possono essere le limitazioni del NOS?",
+          "risposte": [
+            "Territoriali, Temporalli e di Elevabilità",
+            "Il NOS non prevede limitazioni",
+            "Di Grado e di Tempo",
+            "unicamente derivanti dal NEED TO KNOW"
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "SEC-017",
+          "testo": "Qual è il danno arrecato dalla compromissione di un documento \"SEGRETO\"",
+          "risposte": [
+            "Molto Grave",
+            "Gravissimo",
+            "Lieve",
+            "Grave"
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "SEC-018",
+          "testo": "Quale delle seguenti è una Qualifica di Sicurezza?",
+          "risposte": [
+            "ATOMAL",
+            "RISERVATISSIMO",
+            "CTS",
+            "CRYPTO"
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "SEC-019",
+          "testo": "Telefonate relative ad argomenti classificati dovrebbero essere fatte solo con:",
+          "risposte": [
+            "Qualsiasi tipo di apparato telefonico.",
+            "Apparati dedicati CRYPTO.",
+            "“Push-To-Talk” (PTT).",
+            "Tutte le risposte precedenti sono esatte."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "SEC-020",
+          "testo": "Cosa significa la sigla CSC?",
+          "risposte": [
+            "Security Composition Number.",
+            "NATO Certificate of Security Operative.",
+            "Classified Secretiveness Clearance.",
+            "Certificate of Security Clearance."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "SEC-021",
+          "testo": "Cosa deve essere fatto in caso di ritrovamento di documenti classificati?",
+          "risposte": [
+            "Distruggerli immediatamente.",
+            "Chiedere informazioni sul da farsi ad un collega.",
+            "Informare il C3 e la polizia militare aspettandone l’arrivo.",
+            "Avvisare immediatamente la catena di comando della Sicurezza."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "SEC-022",
+          "testo": "Il manuale Nato Crisis Response System  tratta di:",
+          "risposte": [
+            "Operazioni Fuori dai Confini Nazionali.",
+            "Stati di Allertamento, Misure di Risposta alle Crisi",
+            "Regolamento sul Servizio Territoriale e di Presidio.",
+            "Stati di Allertamento CBRN – Misure Precauzionali."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "SEC-023",
+          "testo": "Nel trattamento del “Prigioniero di guerra” qual è la prima azione da fare?",
+          "risposte": [
+            "Lo interrogo e in caso di più prigionieri li lascio parlare in un angolo tenendoli sotto tiro.",
+            "Gli spiego quali sono i suoi diritti prima di arrestarlo.",
+            "Perquisirlo alla ricerca di qualsiasi cosa possa essere utilizzata com arma, facendosi aiutare da un collega armato che lo tiene sotto tiro.",
+            "Lo incappuccio e lo chiudo nel mio ufficio."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "SEC-024",
+          "testo": "Qual è l'ente delegato dallo SMA alla dichiarazione degli Stati di Allertamento per tutte le installazioni A.M.?",
+          "risposte": [
+            "Stato Maggiore Esercito.",
+            "C.S.A.",
+            "C.O.I..",
+            "Il Comandante del 3° Reparto SMA."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "SEC-025",
+          "testo": "Cosa sono le \"Informazione Non Classificate Controllate\" (I.N.C.C.)",
+          "risposte": [
+            "Informazioni che necessitano di un controllo giornaliero da parte del personale del PCN",
+            "Informazioni di alta classifica",
+            "informazioni che non rientrano nella categoria \"classificate\" ma richiedono tuttavia l’applicazione di misure di protezione minime",
+            "Tutte le risposte sono esatte"
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "SEC-026",
+          "testo": "Quale delle seguenti direttive tratta gli “Stati di Allertamento – Misure Minime”?",
+          "risposte": [
+            "DPD 01/03.",
+            "NCRS Manual e la direttiva ACO AD 70-1.",
+            "SMD-G-106.",
+            "ATP 3.8.1."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "SEC-027",
+          "testo": "Il sistema ITA SECRET WAN consente la trasmissione di documenti fino alla classifica",
+          "risposte": [
+            "RISERVATO",
+            "SEGRETO",
+            "RISERVATISSIMO",
+            "SEGRETISSIMO"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "SEC-028",
+          "testo": "Un computer collegato in rete INTERNET può essere usato per elaborare documenti classificati?",
+          "risposte": [
+            "No, mai, in nessun caso.",
+            "Solo su autorizzazione dell’Ufficiale INFOSEC.",
+            "Solo su autorizzazione del l’Ufficiale alla Sicurezza.",
+            "Tutte le risposte precedenti sono errate"
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "SEC-029",
+          "testo": "Cosa significa COMSEC ?",
+          "risposte": [
+            "Commander Security",
+            "Compromission Security",
+            "Comando Operativo Militare della Sicurezza",
+            "Communication Security"
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "SEC-030",
+          "testo": "Cosa è una compromissione?",
+          "risposte": [
+            "L'invio di personale in risposta ad una minaccia",
+            "Il mancato rispetto di una disposizione in materia di protezione e tutela delle informazioni Classificate.",
+            "La perdita di materiale classificato.",
+            "il possesso di informazioni classificate, da parte di una persona non autorizzata."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "SEC-031",
+          "testo": "Quando si applica lo stato di allertamento Bravo?",
+          "risposte": [
+            "Quando lo decide il Comandante.",
+            "Quando c’è stato un attacco terroristico alla base più vicina.",
+            "Quando c’é un incremento o probabilità di minaccia di attività terroristica nonostante particolari obiettivi siano stati individuati.",
+            "Mai."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "SEC-032",
+          "testo": "Quali sono le classifiche di segretezza?",
+          "risposte": [
+            "Segretissimo, Segreto, Riservatissimo, Riservato",
+            "Cosmic Top Secret, Nato Secret.",
+            "Nato restricted and Nato Unclassified.",
+            "Top Secret and Nato Confidential."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "SEC-033",
+          "testo": "Cosa è una violazione alla sicurezza?",
+          "risposte": [
+            "Unicamente l'ingresso di personale non autorizzato nel sedime",
+            "La presenza di intruder nel sedime",
+            "La cattura dell'Ufficiale alla Sicurezza per mano di personale armato",
+            "la conseguenza di azioni od omissioni contrarie ad una disposizione in materia di protezione e tutela delle Informazioni Classificate, che potrebbero mettere a repentaglio o compromettere le Informazioni stesse."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "SEC-034",
+          "testo": "Chi determina la classifica di sicurezza di un documento?",
+          "risposte": [
+            "Comandante della Base.",
+            "L’originatore del documento.",
+            "Ufficiale alla sicurezza.",
+            "Ufficio sicurezza PCN."
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "SEC-035",
+          "testo": "Come può essere trasmesso un documento classificato COSMIC TOP SECRET e ATOMAL?",
+          "risposte": [
+            "Chiunque può portare con sè un documento con tale classifica.",
+            "Solo via e-mail istituzionale.",
+            "Solo con corriere abilitato ufficiale.",
+            "Solo il Comandante di Gruppo può trasmetterlo."
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "SEC-036",
+          "testo": "Chi si deve informare se c’è stata una violazione ai documenti classificati?",
+          "risposte": [
+            "Ufficiale alla sicurezza.",
+            "Un collega.",
+            "Comandante dei Carabinieri.",
+            "Nessuno."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "SEC-037",
+          "testo": "Qual è normalmente il termine di validità di un N.O.S. SEGRETO?",
+          "risposte": [
+            "Illimitato.",
+            "3 anni.",
+            "5 anni.",
+            "10 anni."
+          ],
+          "corretta": 3
+        },
+        {
+          "id": "SEC-038",
+          "testo": "Chi ha la responsabilità di proteggere le informazioni classificate?",
+          "risposte": [
+            "Chiunque ha in custodia, processa o ha conoscenza delle predette informazioni.",
+            "Ufficio sicurezza.",
+            "Comandante della Base.",
+            "Nessuno."
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "SEC-039",
+          "testo": "Cosa è un Malware?",
+          "risposte": [
+            "Software creato con lo scopo di causare danni ad un computer, ai dati o ad un sistema informatico qualora eseguito;",
+            "Un software in grado di limitare gli accessi non autorizzati ad un sistema",
+            "Una procedura di sicurezza",
+            "Tutte le precedenti risposte sono errate"
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "SEC-040",
+          "testo": "Cosa è un Firewall?",
+          "risposte": [
+            "Software creato con lo scopo di causare danni ad un computer, ai dati o ad un sistema informatico qualora eseguito;",
+            "Un software in grado di limitare gli accessi ad un sistema al solo personale autorizzato",
+            "Un virus in grado di trasmettere le informazioni classificate ad un PC remoto",
+            "Tutte le precedenti risposte sono errate"
+          ],
+          "corretta": 1
+        }
+      ]
+    }
+  ]
+}

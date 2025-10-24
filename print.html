@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stampa banca dati</title>
+  <style>
+    :root{ --ink:#111827; --muted:#6b7280; --border:#e5e7eb; --ok:#198754 }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink)}
+    header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border);padding:10px 12px;display:flex;align-items:center;gap:8px}
+    header h1{font-size:18px;margin:0}
+    .wrap{max-width:900px;margin:0 auto;padding:14px}
+    .toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 10px}
+    .btn{background:#fff;border:1px solid var(--border);padding:8px 12px;border-radius:10px;cursor:pointer}
+    .btn.primary{background:#111827;color:#fff;border-color:#111827}
+    .meta{color:var(--muted);font-size:13px}
+    .materia{border:1px solid var(--border);border-radius:12px;margin:12px 0;padding:10px}
+    .question{font-weight:700;margin:10px 0 6px}
+    .answers{margin:0 0 8px 18px}
+    .answers li{margin:3px 0}
+    .correct{color:var(--ok);font-weight:700}
+    .qimg{margin:6px 0}
+    .qimg img{max-width:100%;max-height:320px;border:1px solid var(--border);border-radius:8px}
+    @media print{
+      header,.toolbar{display:none !important}
+      .materia{page-break-inside:avoid}
+      .question{break-inside:avoid}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Stampa banca dati</h1>
+    <div id="meta" class="meta"></div>
+    <div style="flex:1"></div>
+    <button class="btn" onclick="history.back()">Indietro</button>
+    <button class="btn primary" onclick="window.print()">Stampa</button>
+  </header>
+  <div class="wrap">
+    <div class="toolbar">
+      <label><input type="checkbox" id="toggleAnswers"> Evidenzia risposte esatte</label>
+    </div>
+    <div id="content"></div>
+  </div>
+
+  <script>
+  const UI = { content: document.getElementById('content'), meta: document.getElementById('meta'), toggleAnswers: document.getElementById('toggleAnswers') };
+
+  function render(dataset, materiaOpt, highlight){
+    UI.content.innerHTML = '';
+    UI.toggleAnswers.checked = !!highlight;
+    const mats = dataset.materie||[];
+    const list = (materiaOpt && materiaOpt !== '__ALL__') ? mats.filter(m=>m.nome===materiaOpt) : mats;
+    list.forEach(m=>{
+      const box = document.createElement('section');
+      box.className = 'materia';
+      const h = document.createElement('h2'); h.textContent = m.nome; h.style.margin='0 0 8px'; box.appendChild(h);
+      m.domande.forEach(q=>{
+        const dq = document.createElement('div');
+        dq.className = 'q';
+        const p = document.createElement('div'); p.className = 'question'; p.textContent = q.testo; dq.appendChild(p);
+        if(q.immagine){
+          const div = document.createElement('div'); div.className='qimg';
+          const im = new Image(); im.src = q.immagine; im.alt='immagine domanda';
+          div.appendChild(im); dq.appendChild(div);
+        }
+        const ul = document.createElement('ul'); ul.className = 'answers';
+        (q.risposte||[]).forEach((a,i)=>{
+          const li = document.createElement('li');
+          li.textContent = String.fromCharCode(65+i)+'. '+a;
+          if(UI.toggleAnswers.checked && i===q.corretta){ li.classList.add('correct'); }
+          ul.appendChild(li);
+        });
+        dq.appendChild(ul);
+        if(q.spiegazione && UI.toggleAnswers.checked){
+          const sp = document.createElement('div'); sp.className='meta'; sp.textContent = q.spiegazione; dq.appendChild(sp);
+        }
+        box.appendChild(dq);
+      });
+      UI.content.appendChild(box);
+    });
+  }
+
+  // Load payload from localStorage (works offline file://)
+  let payload = null;
+  try{ payload = JSON.parse(localStorage.getItem('quizsim-print')||'null'); }catch(e){}
+  if(payload && payload.dataset){
+    UI.meta.textContent = (payload.optionMateria==='__ALL__' ? 'Tutte le materie' : payload.optionMateria)+' • '+(payload.highlight?'Risposte evidenziate':'Senza evidenziazione');
+    render(payload.dataset, payload.optionMateria, payload.highlight);
+    UI.toggleAnswers.addEventListener('change', ()=>render(payload.dataset, payload.optionMateria, UI.toggleAnswers.checked));
+  }else{
+    // Fallback: query params ?key=...&materia=...&highlight=1 (requires fetch)
+    const params = new URLSearchParams(location.search);
+    const key = params.get('key')||'difesa';
+    const materia = params.get('materia')||'__ALL__';
+    const highlight = params.get('highlight')==='1';
+    UI.meta.textContent = (materia==='__ALL__' ? 'Tutte le materie' : materia)+' • '+(highlight?'Risposte evidenziate':'Senza evidenziazione');
+    fetch('data/'+key+'.json').then(r=>r.json()).then(ds=>{
+      render(ds, materia, highlight);
+      UI.toggleAnswers.checked = highlight;
+      UI.toggleAnswers.addEventListener('change', ()=>render(ds, materia, UI.toggleAnswers.checked));
+    }).catch(()=>{
+      document.body.innerHTML = '<div style="padding:16px">Impossibile caricare i dati per la stampa. Torna indietro e riprova.</div>';
+    });
+  }
+  </script>
+</body>
+</html>

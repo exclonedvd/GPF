@@ -1,0 +1,243 @@
+{
+  "materie": [
+    {
+      "nome": "Comunicazioni",
+      "domande": [
+        {
+          "id": "WS3-COM-001",
+          "testo": "Nel protocollo radio, “roger” significa:",
+          "risposte": [
+            "Ripeti",
+            "Ricevuto",
+            "Pronto a partire",
+            "Annulla"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "WS3-COM-002",
+          "testo": "La procedura di 'check radio' serve a:",
+          "risposte": [
+            "Verificare copertura e qualità",
+            "Allineare bussole",
+            "Criptare chiavi",
+            "Azzerare contatori"
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "WS3-COM-003",
+          "testo": "La sillabazione NATO di 'M' è:",
+          "risposte": [
+            "Mike",
+            "Mary",
+            "Meg",
+            "Morse"
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "WS3-COM-004",
+          "testo": "Per ridurre interferenze, si aumenta:",
+          "risposte": [
+            "Larghezza di banda sempre",
+            "Potenza sempre",
+            "Distanza antenna da ostacoli",
+            "Numero di utenti sul canale"
+          ],
+          "corretta": 2,
+          "immagine": "imags/WS3-COM-004.png"
+        },
+        {
+          "id": "WS3-COM-005",
+          "testo": "In simplex si trasmette:",
+          "risposte": [
+            "In entrambe le direzioni simultaneamente",
+            "A turni sulla stessa frequenza",
+            "Solo in una direzione",
+            "Su due frequenze contemporanee"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "WS3-COM-006",
+          "testo": "Una antenna a dipolo è tipicamente:",
+          "risposte": [
+            "Omnidirezionale",
+            "Direzionale",
+            "Bidirezionale (figura a 8)",
+            "Isotropica reale"
+          ],
+          "corretta": 2,
+          "immagine": "imags/WS3-COM-006.png"
+        },
+        {
+          "id": "WS3-COM-007",
+          "testo": "La modulazione FM varia:",
+          "risposte": [
+            "L'ampiezza dell'onda",
+            "La frequenza dell'onda",
+            "La fase dell'onda",
+            "La polarizzazione"
+          ],
+          "corretta": 1
+        }
+      ]
+    },
+    {
+      "nome": "IT di campo",
+      "domande": [
+        {
+          "id": "WS3-IT-001",
+          "testo": "Un indirizzo IPv4 è composto da:",
+          "risposte": [
+            "16 bit",
+            "32 bit",
+            "64 bit",
+            "128 bit"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "WS3-IT-002",
+          "testo": "Il protocollo TCP fornisce:",
+          "risposte": [
+            "Consegna affidabile e ordinata",
+            "Trasmissione broadcast a basso ritardo",
+            "Sincronizzazione oraria",
+            "Routing interdominio"
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "WS3-IT-003",
+          "testo": "La maschera /24 corrisponde a:",
+          "risposte": [
+            "255.255.255.0",
+            "255.255.0.0",
+            "255.0.0.0",
+            "255.255.255.128"
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "WS3-IT-004",
+          "testo": "HTTPS aggiunge a HTTP:",
+          "risposte": [
+            "Caching avanzato",
+            "Compressione obbligatoria",
+            "Crittografia TLS",
+            "Supporto UDP"
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "WS3-IT-005",
+          "testo": "Il DNS traduce:",
+          "risposte": [
+            "Indirizzi IP in nomi",
+            "Nomi di dominio in IP",
+            "MAC in IP",
+            "Porte in protocolli"
+          ],
+          "corretta": 1,
+          "immagine": "imags/WS3-IT-005.png"
+        },
+        {
+          "id": "WS3-IT-006",
+          "testo": "Un gateway predefinito è:",
+          "risposte": [
+            "Un server DNS",
+            "Il router verso altre reti",
+            "Un host di backup",
+            "Un server proxy"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "WS3-IT-007",
+          "testo": "Il comando 'ping' testa:",
+          "risposte": [
+            "DNS",
+            "Latenza/Reachability",
+            "Port forwarding",
+            "QoS"
+          ],
+          "corretta": 1
+        }
+      ]
+    },
+    {
+      "nome": "Crittografia",
+      "domande": [
+        {
+          "id": "WS3-CRY-001",
+          "testo": "AES è un cifrario:",
+          "risposte": [
+            "A flusso",
+            "A blocchi",
+            "Asimmetrico",
+            "A chiave pubblica soltanto"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "WS3-CRY-002",
+          "testo": "RSA si basa sulla difficoltà di:",
+          "risposte": [
+            "Logaritmi discreti",
+            "Fattorizzazione di interi grandi",
+            "Problema dello zaino",
+            "Curve ellittiche"
+          ],
+          "corretta": 1,
+          "immagine": "imags/WS3-CRY-002.png"
+        },
+        {
+          "id": "WS3-CRY-003",
+          "testo": "La crittografia end-to-end protegge:",
+          "risposte": [
+            "Solo in transito",
+            "Solo a riposo",
+            "Dalla sorgente al destinatario",
+            "Solo lato server"
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "WS3-CRY-004",
+          "testo": "SHA-256 è:",
+          "risposte": [
+            "Un cifrario simmetrico",
+            "Un algoritmo di hash",
+            "Un protocollo di trasporto",
+            "Un codec audio"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "WS3-CRY-005",
+          "testo": "Le chiavi pubbliche si scambiano con:",
+          "risposte": [
+            "TLS/PKI",
+            "NTP",
+            "ARP",
+            "DHCP"
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "WS3-CRY-006",
+          "testo": "L'OAEP è:",
+          "risposte": [
+            "Un padding per RSA",
+            "Una modalità per AES",
+            "Un protocollo di routing",
+            "Un tool di sniffing"
+          ],
+          "corretta": 0
+        }
+      ]
+    }
+  ]
+}

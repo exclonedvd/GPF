@@ -1,0 +1,247 @@
+{
+  "materie": [
+    {
+      "nome": "Topografia",
+      "domande": [
+        {
+          "id": "DT-TOP-001",
+          "testo": "Quale strumento misura gli angoli orizzontali in topografia?",
+          "risposte": [
+            "Teodolite",
+            "Altimetro",
+            "Anemometro",
+            "Igrometro"
+          ],
+          "corretta": 0,
+          "spiegazione": "Il teodolite misura angoli orizzontali e verticali.",
+          "immagine": "imags/DT-TOP-001.png"
+        },
+        {
+          "id": "DT-TOP-002",
+          "testo": "Su una carta 1:50.000, 2 cm corrispondono a:",
+          "risposte": [
+            "100 m",
+            "500 m",
+            "1 km",
+            "2 km"
+          ],
+          "corretta": 2,
+          "spiegazione": "1 cm = 500 m, quindi 2 cm = 1 km."
+        },
+        {
+          "id": "DT-TOP-003",
+          "testo": "Il Nord indicato sulle carte topografiche standard è di norma:",
+          "risposte": [
+            "Magnetico",
+            "Geografico (vero)",
+            "Locale",
+            "Arbitrario"
+          ],
+          "corretta": 1,
+          "immagine": "imags/DT-TOP-003.png"
+        },
+        {
+          "id": "DT-TOP-004",
+          "testo": "La scala 1:25.000 indica che 1 cm sulla carta equivale a:",
+          "risposte": [
+            "25 m",
+            "250 m",
+            "2,5 km",
+            "25 km"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "DT-TOP-005",
+          "testo": "Il profilo altimetrico serve per:",
+          "risposte": [
+            "Rappresentare variazioni di quota su un percorso",
+            "Misurare la declinazione magnetica",
+            "Calcolare l'azimut vero",
+            "Correggere l'errore di collimazione"
+          ],
+          "corretta": 0,
+          "immagine": "imags/DT-TOP-005.png"
+        },
+        {
+          "id": "DT-TOP-006",
+          "testo": "Le curve di livello più spesse sono dette:",
+          "risposte": [
+            "Ausiliarie",
+            "Intermedie",
+            "Maestre",
+            "Di riferimento locale"
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "DT-TOP-007",
+          "testo": "Quale valore di azimut corrisponde a Est?",
+          "risposte": [
+            "0°",
+            "90°",
+            "180°",
+            "270°"
+          ],
+          "corretta": 1
+        }
+      ]
+    },
+    {
+      "nome": "Normativa",
+      "domande": [
+        {
+          "id": "DT-NOR-001",
+          "testo": "Il principio di proporzionalità nell'impiego della forza implica che:",
+          "risposte": [
+            "Si usa sempre la massima forza",
+            "La forza è adeguata alla minaccia",
+            "Si usa solo forza non letale",
+            "Non si usa mai la forza"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "DT-NOR-002",
+          "testo": "Il ROE (Rules of Engagement) definisce:",
+          "risposte": [
+            "Le dotazioni logistiche",
+            "Le regole di ingaggio",
+            "La paga giornaliera",
+            "Il piano carburanti"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "DT-NOR-003",
+          "testo": "Il principio di necessità comporta che:",
+          "risposte": [
+            "L'uso della forza è sempre vietato",
+            "Si usa la forza solo se indispensabile",
+            "Si usa la forza per deterrenza simbolica",
+            "Si usa la forza secondo abitudini"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "DT-NOR-004",
+          "testo": "L'autodifesa è consentita quando sussiste:",
+          "risposte": [
+            "Pericolo attuale e ingiusto",
+            "Offesa futura e ipotetica",
+            "Ordine verbale generico",
+            "Finalità di addestramento"
+          ],
+          "corretta": 0,
+          "immagine": "imags/DT-NOR-004.png"
+        },
+        {
+          "id": "DT-NOR-005",
+          "testo": "Il 'minimo mezzo' si riferisce a:",
+          "risposte": [
+            "L'arma più leggera disponibile",
+            "Il livello di forza sufficiente allo scopo",
+            "Il numero minimo di operatori",
+            "L'impiego esclusivo di protezioni"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "DT-NOR-006",
+          "testo": "Le ROE possono variare in funzione di:",
+          "risposte": [
+            "Metereologia soltanto",
+            "Teoria dei giochi",
+            "Scenario e mandato della missione",
+            "Colori delle uniformi"
+          ],
+          "corretta": 2
+        },
+        {
+          "id": "DT-NOR-007",
+          "testo": "L'identificazione positiva del bersaglio serve a:",
+          "risposte": [
+            "Ridurre il consumo di munizioni",
+            "Evitare il fuoco fratricida",
+            "Accelerare il movimento",
+            "Migliorare la radiofonia"
+          ],
+          "corretta": 1
+        }
+      ]
+    },
+    {
+      "nome": "Logistica",
+      "domande": [
+        {
+          "id": "DT-LOG-001",
+          "testo": "Il principio FIFO in magazzino significa:",
+          "risposte": [
+            "First In, First Out",
+            "Fast In, Fast Out",
+            "File In, File Out",
+            "Fill In, Fill Out"
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "DT-LOG-002",
+          "testo": "Il KPI che misura la disponibilità di materiale è:",
+          "risposte": [
+            "Fill Rate",
+            "Lead Time",
+            "Backorder Rate",
+            "Shrinkage"
+          ],
+          "corretta": 0,
+          "immagine": "imags/DT-LOG-002.png"
+        },
+        {
+          "id": "DT-LOG-003",
+          "testo": "Il lead time è:",
+          "risposte": [
+            "Il tempo di riordino totale",
+            "La quantità minima ordinabile",
+            "La capacità di stoccaggio",
+            "Il costo unitario"
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "DT-LOG-004",
+          "testo": "Il lotto economico di acquisto (EOQ) serve a:",
+          "risposte": [
+            "Massimizzare le rotture di stock",
+            "Minimizzare i costi totali",
+            "Aumentare il trasporto urgente",
+            "Ridurre le scorte a zero"
+          ],
+          "corretta": 1
+        },
+        {
+          "id": "DT-LOG-005",
+          "testo": "Un DDT è:",
+          "risposte": [
+            "Documento di Trasporto",
+            "Dispositivo di Tiro",
+            "Documento di Test",
+            "Disposizione Tecnica"
+          ],
+          "corretta": 0
+        },
+        {
+          "id": "DT-LOG-006",
+          "testo": "Una distinta base (BOM) descrive:",
+          "risposte": [
+            "La lista componenti di un bene",
+            "La lista dei conducenti",
+            "Il piano di turnazione",
+            "La lista dei fornitori"
+          ],
+          "corretta": 0,
+          "immagine": "imags/DT-LOG-006.png"
+        }
+      ]
+    }
+  ]
+}

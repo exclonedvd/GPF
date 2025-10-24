@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin – Editor Banche Dati Quiz</title>
+  <link rel="icon" href="logo.jpg" />
+  <style>
+    :root{ --border:#e5e7eb; --muted:#4b5563; --ink:#0e0f14; --bg:#f7f8fb; --card:#ffffff;
+           --accent:#8b1a1a; --accent-2:#b02a2a; --ok:#198754; --ko:#c0392b; --shadow:0 6px 24px rgba(0,0,0,.06);
+           --radius:14px; }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    .wrap{max-width:1200px;margin:0 auto;padding:18px}
+    header{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+    header img{width:48px;height:48px;border-radius:50%;background:#fff;border:1px solid var(--border)}
+    h1{font-size:22px;margin:0}
+    .muted{color:var(--muted)}
+    .bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:10px 0}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:12px}
+    select,input[type="text"],textarea{background:#fff;border:1px solid var(--border);color:var(--ink);padding:10px;border-radius:10px;width:100%}
+    textarea{min-height:110px;resize:vertical}
+    .btn{background:linear-gradient(180deg,var(--accent),var(--accent-2));border:none;color:#fff;padding:10px 14px;border-radius:10px;cursor:pointer}
+    .btn.ghost{background:#fff;color:var(--ink);border:1px solid var(--border)}
+    .btn.small{padding:6px 10px;border-radius:8px;font-size:13px}
+    .grid{display:grid;gap:12px;grid-template-columns:280px 1fr 420px}
+    @media (max-width:1060px){ .grid{grid-template-columns:1fr} }
+    .list{max-height:60vh;overflow:auto;border:1px solid var(--border);border-radius:10px}
+    .item{padding:10px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;gap:8px;align-items:center;cursor:pointer}
+    .item:last-child{border-bottom:none}.item.active{background:#f3f4f6}
+    .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+    .badge{display:inline-block;font-size:12px;background:#f3f4f6;border:1px solid var(--border);border-radius:999px;padding:4px 8px;color:#374151}
+    .k{width:72px;flex:0 0 72px}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .ans-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .preview{border:1px dashed var(--border);border-radius:10px;padding:8px;text-align:center;background:#fff}
+    .preview img{max-width:100%;max-height:160px;display:block;margin:0 auto}
+    .help{font-size:13px;color:#6b7280}
+    .toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="logo.jpg" alt="logo">
+      <div>
+        <h1>Admin – Editor Banche Dati Quiz</h1>
+      
+      </div>
+    </header>
+
+    <div class="card bar">
+      <div>
+        <label class="muted">Banca dati</label><br>
+        <select id="dataset">
+          <option value="difesa">difesa.json</option>
+          <option value="combad">combad.json</option>
+          <option value="ws3">ws3.json</option>
+        </select>
+      </div>
+      <div class="row">
+      
+        <input class="btn small ghost" type="file" id="openFile" accept=".json">
+        <button class="btn small ghost" id="newBtn">Nuovo (vuoto)</button>
+        <button class="btn small" id="saveBtn">Salva/Scarica JSON</button>
+      </div>
+      <div class="muted" id="status">Stato: pronto</div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="row" style="justify-content:space-between">
+          <strong>Materie</strong>
+          <div class="row">
+            <button class="btn small ghost" id="addMateria">+ Aggiungi</button>
+            <button class="btn small ghost" id="renameMateria">Rinomina</button>
+            <button class="btn small ghost" id="deleteMateria">Elimina</button>
+          </div>
+        </div>
+        <div id="materieList" class="list"></div>
+      </div>
+
+      <div class="card">
+        <div class="row" style="justify-content:space-between">
+          <strong>Domande (<span id="countDomande">0</span>)</strong>
+          <div class="row">
+            <input type="text" id="filter" placeholder="Cerca testo domanda...">
+            <button class="btn small ghost" id="addDomanda">+ Aggiungi</button>
+            <button class="btn small ghost" id="duplicaDomanda">Duplica</button>
+            <button class="btn small ghost" id="deleteDomanda">Elimina</button>
+          </div>
+        </div>
+        <div id="domandeList" class="list"></div>
+      </div>
+
+      <div class="card">
+        <strong>Editor domanda</strong>
+        <div class="help" style="margin:6px 0 10px">
+          Carica un'immagine (opzionale): il campo sarà impostato a <code>imags/&lt;ID&gt;.estensione</code> e potrai scaricare il file con il nome corretto.
+        </div>
+
+        <div class="row">
+          <div class="k"><label class="muted">ID</label></div>
+          <div style="flex:1"><input type="text" id="qId" placeholder="Es. MAT-001"></div>
+          <button class="btn small ghost" id="genId">Genera</button>
+        </div>
+
+        <div style="margin-top:8px">
+          <label class="muted">Testo domanda</label>
+          <textarea id="qTesto" placeholder="Scrivi qui la domanda..."></textarea>
+        </div>
+
+        <div class="ans-grid" style="margin-top:8px">
+          <div><label class="muted">Risposta A</label><input type="text" id="a0"></div>
+          <div><label class="muted">Risposta B</label><input type="text" id="a1"></div>
+          <div><label class="muted">Risposta C</label><input type="text" id="a2"></div>
+          <div><label class="muted">Risposta D</label><input type="text" id="a3"></div>
+        </div>
+
+        <div class="row" style="margin-top:8px">
+          <span class="muted">Corretta:</span>
+          <label class="badge"><input type="radio" name="corr" value="0" checked> A</label>
+          <label class="badge"><input type="radio" name="corr" value="1"> B</label>
+          <label class="badge"><input type="radio" name="corr" value="2"> C</label>
+          <label class="badge"><input type="radio" name="corr" value="3"> D</label>
+        </div>
+
+        <div style="margin-top:8px">
+          <label class="muted">Spiegazione (opz.)</label>
+          <textarea id="qSpiega"></textarea>
+        </div>
+
+        <div class="two" style="margin-top:8px">
+          <div>
+            <label class="muted">Percorso immagine (relativo)</label>
+            <input type="text" id="qImg" placeholder="imags/MAT-001.png">
+            <div class="help">Assicurati che il file esista nella cartella <b>imags/</b> accanto a <code>index.html</code>.</div>
+          </div>
+          <div>
+            <label class="muted">Carica immagine</label>
+            <input type="file" id="uploadImg" accept="image/*">
+            <div class="preview" id="imgPreview"><span class="muted">Nessuna immagine</span></div>
+            <div class="toolbar">
+              <button class="btn small ghost" id="dlImg">Scarica immagine con nome corretto</button>
+            </div>
+            <div class="help" id="imgHelp"></div>
+          </div>
+        </div>
+
+        <div class="toolbar">
+          <button class="btn small" id="apply">Applica modifiche</button>
+          <button class="btn small ghost" id="revert">Annulla</button>
+          <button class="btn small ghost" id="validate">Controlla campi</button>
+        </div>
+
+        <div id="msg" class="help"></div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:12px">
+      <strong>Guida rapida</strong>
+      <ol class="help">
+        <li>Carica una banca dati dal progetto o da file locale.</li>
+        <li>Gestisci Materie e Domande; compila l'editor a destra.</li>
+        <li>Per l'immagine: caricala, poi premi “Scarica immagine...” e sposta il file nella cartella <b>imags/</b>.</li>
+        <li>Premi “Salva/Scarica JSON” e sostituisci il file nel progetto.</li>
+      </ol>
+    </div>
+  </div>
+
+  <script>
+    let model = {"materie":[]};
+    let currentMateriaIndex = -1;
+    let currentDomandaIndex = -1;
+    const files = { difesa:'difesa.json', combad:'combad.json', ws3:'ws3.json' };
+
+    let lastImageBlob = null;
+
+    const $ = (s,ctx=document)=>ctx.querySelector(s);
+    const $$ = (s,ctx=document)=>Array.from(ctx.querySelectorAll(s));
+    const setStatus = t => $('#status').textContent = 'Stato: '+t;
+    function toast(t, ok=true){ const msg=$('#msg'); msg.textContent=t; msg.style.color= ok?'var(--ok)':'var(--ko)'; setTimeout(()=>msg.textContent='',2500); }
+
+    function renderMaterie(){
+      const box = $('#materieList'); box.innerHTML='';
+      model.materie.forEach((m,i)=>{
+        const it = document.createElement('div');
+        it.className = 'item'+(i===currentMateriaIndex?' active':'');
+        it.innerHTML = `<div><strong>${m.nome}</strong> <span class="badge">${m.domande?.length||0} dom.</span></div>`;
+        it.onclick = ()=>{ currentMateriaIndex=i; currentDomandaIndex=-1; renderMaterie(); renderDomande(); clearEditor(); };
+        box.appendChild(it);
+      });
+      if(currentMateriaIndex<0 && model.materie.length>0){ currentMateriaIndex=0; }
+    }
+    function renderDomande(){
+      const box = $('#domandeList'); box.innerHTML='';
+      const filter = $('#filter').value.trim().toLowerCase();
+      const mat = model.materie[currentMateriaIndex];
+      const list = (mat?.domande||[]).map((d,idx)=>({d,idx})).filter(x=>!filter || x.d.testo.toLowerCase().includes(filter));
+      $('#countDomande').textContent = mat ? (mat.domande?.length||0) : 0;
+      list.forEach(({d,idx})=>{
+        const it = document.createElement('div');
+        it.className = 'item'+(idx===currentDomandaIndex?' active':'');
+        const short = d.testo?.length>70 ? d.testo.slice(0,70)+'…' : (d.testo||'');
+        it.innerHTML = `<div><span class="badge">${d.id||'(id?)'}</span> ${short}</div>`;
+        it.onclick = ()=>{ currentDomandaIndex=idx; loadEditor(d); renderDomande(); };
+        box.appendChild(it);
+      });
+    }
+    function clearEditor(){
+      $('#qId').value=''; $('#qTesto').value=''; ['a0','a1','a2','a3'].forEach(id=>$('#'+id).value='');
+      $$('input[name="corr"]').forEach((r,i)=>r.checked=i===0);
+      $('#qSpiega').value=''; $('#qImg').value=''; $('#imgPreview').innerHTML='<span class="muted">Nessuna immagine</span>'; $('#imgHelp').textContent='';
+      lastImageBlob=null;
+    }
+    function loadEditor(q){
+      $('#qId').value=q.id||''; $('#qTesto').value=q.testo||'';
+      $('#a0').value=q.risposte?.[0]||''; $('#a1').value=q.risposte?.[1]||''; $('#a2').value=q.risposte?.[2]||''; $('#a3').value=q.risposte?.[3]||'';
+      $$('input[name="corr"]').forEach(r=>r.checked = parseInt(r.value,10)===(q.corretta??0));
+      $('#qSpiega').value=q.spiegazione||''; $('#qImg').value=q.immagine||'';
+      if(q.immagine){ $('#imgPreview').innerHTML = `<img src="${q.immagine}" alt="anteprima">`; } else { $('#imgPreview').innerHTML='<span class="muted">Nessuna immagine</span>'; }
+      $('#imgHelp').textContent = q.immagine ? 'Assicurati che il file esista nella cartella imags/' : '';
+      lastImageBlob=null;
+    }
+
+    // Materie
+    $('#addMateria').onclick = ()=>{
+      const nome = prompt('Nome nuova materia:'); if(!nome) return;
+      model.materie.push({nome, domande:[]});
+      currentMateriaIndex = model.materie.length-1; currentDomandaIndex=-1;
+      renderMaterie(); renderDomande(); clearEditor(); setStatus('Materia aggiunta');
+    };
+    $('#renameMateria').onclick = ()=>{
+      const m = model.materie[currentMateriaIndex]; if(!m){alert('Seleziona una materia.');return;}
+      const nome = prompt('Rinomina materia:', m.nome); if(!nome) return;
+      m.nome = nome; renderMaterie(); setStatus('Materia rinominata');
+    };
+    $('#deleteMateria').onclick = ()=>{
+      const m = model.materie[currentMateriaIndex]; if(!m){alert('Seleziona una materia.');return;}
+      if(!confirm('Eliminare la materia e le sue domande?')) return;
+      model.materie.splice(currentMateriaIndex,1); currentMateriaIndex=-1; currentDomandaIndex=-1;
+      renderMaterie(); renderDomande(); clearEditor(); setStatus('Materia eliminata');
+    };
+
+    // Domande
+    $('#filter').oninput = renderDomande;
+    $('#addDomanda').onclick = ()=>{
+      const m = model.materie[currentMateriaIndex]; if(!m){alert('Seleziona una materia.');return;}
+      const q = { id: suggestId(m.nome), testo:'', risposte:['','','',''], corretta:0, spiegazione:'', immagine:'' };
+      m.domande.push(q); currentDomandaIndex=m.domande.length-1;
+      renderDomande(); loadEditor(q); setStatus('Domanda aggiunta');
+    };
+    $('#duplicaDomanda').onclick = ()=>{
+      const m = model.materie[currentMateriaIndex]; if(!m || currentDomandaIndex<0){alert('Seleziona una domanda.');return;}
+      const q = JSON.parse(JSON.stringify(m.domande[currentDomandaIndex]));
+      q.id = nextIdVariant(q.id || suggestId(m.nome));
+      m.domande.splice(currentDomandaIndex+1,0,q); currentDomandaIndex++;
+      renderDomande(); loadEditor(q); setStatus('Domanda duplicata');
+    };
+    $('#deleteDomanda').onclick = ()=>{
+      const m = model.materie[currentMateriaIndex]; if(!m || currentDomandaIndex<0){alert('Seleziona una domanda.');return;}
+      const q = m.domande[currentDomandaIndex];
+      if(!confirm(`Eliminare la domanda "${q.id||''}"?`)) return;
+      m.domande.splice(currentDomandaIndex,1); currentDomandaIndex=-1;
+      renderDomande(); clearEditor(); setStatus('Domanda eliminata');
+    };
+
+    // Editor
+    function readEditor(){
+      const id=$('#qId').value.trim(); const testo=$('#qTesto').value.trim();
+      const risposte= ['a0','a1','a2','a3'].map(id=>($('#'+id).value||'').trim());
+      const corr=parseInt($$('input[name="corr"]').find(r=>r.checked).value,10);
+      const spiegazione=$('#qSpiega').value.trim();
+      const immagine=$('#qImg').value.trim();
+      return {id,testo,risposte,corretta:corr,spiegazione,immagine};
+    }
+    function validateQ(q){
+      if(!q.testo) return 'Inserisci il testo della domanda.';
+      if(q.risposte.some(x=>!x)) return 'Inserisci tutte e 4 le risposte.';
+      if(!(q.corretta>=0&&q.corretta<=3)) return 'Seleziona la risposta corretta.';
+      return '';
+    }
+    $('#apply').onclick = ()=>{
+      const m=model.materie[currentMateriaIndex]; if(!m){alert('Seleziona una materia.');return;}
+      if(currentDomandaIndex<0){alert('Seleziona o crea una domanda.');return;}
+      const q=readEditor(); const err=validateQ(q); if(err){toast(err,false);return;}
+      if(!q.id){ q.id = suggestId(m.nome); $('#qId').value=q.id; }
+      m.domande[currentDomandaIndex]=q; renderDomande(); toast('Modifiche applicate'); setStatus('In memoria (non salvato)');
+    };
+    $('#revert').onclick = ()=>{
+      const m=model.materie[currentMateriaIndex]; if(!m || currentDomandaIndex<0){clearEditor();return;}
+      loadEditor(m.domande[currentDomandaIndex]); toast('Annullato');
+    };
+    $('#validate').onclick = ()=>{
+      const err = validateQ(readEditor()); toast(err?err:'Tutto ok ✔', !err);
+    };
+
+    // ID helpers
+    function slugifyNomeMateria(nome){ const up=(nome||'MAT').toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); return (up.replace(/[^A-Z]/g,'').slice(0,3) || 'MAT'); }
+    function suggestId(nome){ const pref=slugifyNomeMateria(nome); let n=1; const used=new Set(model.materie.flatMap(m=>m.domande.map(d=>d.id))); while(used.has(`${pref}-${String(n).padStart(3,'0')}`)) n++; return `${pref}-${String(n).padStart(3,'0')}`; }
+    function nextIdVariant(id){ const m=id?.match(/^(.*?)-(\d+)$/); if(!m) return id+'-COPY'; const base=m[1]; const num=parseInt(m[2],10)+1; return `${base}-${String(num).padStart(3,'0')}`; }
+    $('#genId').onclick = ()=>{ const m=model.materie[currentMateriaIndex]; if(!m){alert('Seleziona una materia.');return;} $('#qId').value = suggestId(m.nome); };
+
+    // Immagini: carica e prepara download con nome in imags/
+    $('#uploadImg').addEventListener('change', async (e)=>{
+      const file = e.target.files[0]; if(!file) return;
+      lastImageBlob = file;
+      const id = ($('#qId').value.trim() || 'IMG-'+Date.now());
+      const ext = (file.name.split('.').pop()||'png').toLowerCase();
+      const safeExt = ['png','jpg','jpeg','gif','webp'].includes(ext) ? ext : 'png';
+      const path = `imags/${id}.${safeExt}`;
+      $('#qImg').value = path;
+      const reader = new FileReader();
+      reader.onload = ()=>{ $('#imgPreview').innerHTML = `<img src="${reader.result}" alt="anteprima">`; };
+      reader.readAsDataURL(file);
+      $('#imgHelp').textContent = `Clicca "Scarica immagine..." e sposta il file nella cartella imags/ del progetto (${path}).`;
+      toast('Immagine pronta per il download');
+    });
+    $('#dlImg').onclick = ()=>{
+      if(!lastImageBlob){ alert('Carica prima un’immagine.'); return; }
+      const path = $('#qImg').value.trim() || 'imags/immagine.png';
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(lastImageBlob);
+      const fname = path.split('/').pop();
+      a.download = fname;
+      a.click();
+      URL.revokeObjectURL(a.href);
+      toast(`Scaricata immagine: ${fname}. Spostala nella cartella "imags/".`);
+    };
+
+    // File I/O
+    $('#loadBtn').onclick = async ()=>{
+      try{
+        const res = await fetch(files[$('#dataset').value], {cache:'no-store'});
+        if(!res.ok) throw 0;
+        model = await res.json();
+        currentMateriaIndex=0; currentDomandaIndex=-1; renderMaterie(); renderDomande(); clearEditor();
+        setStatus('Caricato dal progetto');
+      }catch(e){
+        alert('Impossibile leggere il file dal progetto.\nApri con un piccolo server (VSCode Live Server, python -m http.server), oppure usa "Apri file".');
+      }
+    };
+    $('#openFile').addEventListener('change', async (e)=>{
+      const f = e.target.files[0]; if(!f) return;
+      try{ model = JSON.parse(await f.text()); }catch(e){ alert('JSON non valido.'); return; }
+      currentMateriaIndex=0; currentDomandaIndex=-1; renderMaterie(); renderDomande(); clearEditor(); setStatus('Caricato da file locale');
+    });
+    $('#newBtn').onclick = ()=>{
+      model = {"materie":[{"nome":"Nuova Materia","domande":[{"id":"MAT-001","testo":"","risposte":["","","",""],"corretta":0,"spiegazione":"","immagine":""}]}]};
+      currentMateriaIndex=0; currentDomandaIndex=0; renderMaterie(); renderDomande(); loadEditor(model.materie[0].domande[0]); setStatus('Nuovo creato');
+    };
+    $('#saveBtn').onclick = ()=>{
+      const data = JSON.stringify(model, null, 2);
+      const blob = new Blob([data], {type:'application/json'});
+      const a = document.createElement('a');
+      const fname = files[$('#dataset').value];
+      a.href = URL.createObjectURL(blob);
+      a.download = fname;
+      a.click();
+      URL.revokeObjectURL(a.href);
+      setStatus('Scaricato '+fname);
+    };
+    $('#mkImags').onclick = ()=>{
+      const content = `Place here the question images referenced in JSON (paths like imags/XYZ.png).`;
+      const blob = new Blob([content], {type:'text/plain'});
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'imags-README.txt';
+      a.click();
+      URL.revokeObjectURL(a.href);
+    };
+
+    // Init
+    renderMaterie(); renderDomande(); clearEditor();
+  </script>
+</body>
+</html>
