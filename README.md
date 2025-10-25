@@ -1,4 +1,4 @@
-# Simulatori Quiz – Difesa Terrestre / Combat Readiness / Ws3
+# GPF Training Hub – Difesa Terrestre / Combat Readiness / Ws3
 
 SPA (Single Page Application) per allenarsi su tre banche dati distinte.  
 Mobile-first, tema chiaro, **offline-ready (PWA)**, stampa in **PDF** con opzioni, immagini allegate alle domande.
