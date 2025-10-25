@@ -21,6 +21,7 @@
     h1{font-size:clamp(20px,3.6vw,34px);margin:10px 0 6px}
     .sub{color:var(--muted)}
     .grid{display:grid;gap:14px;grid-template-columns:1fr}
+    .fullrow{grid-column:1 / -1}
     @media(min-width:720px){ .grid{grid-template-columns:repeat(3,1fr)} }
     .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
     .btn{display:inline-flex;align-items:center;justify-content:center;border:none;border-radius:12px;padding:12px 16px;cursor:pointer;font-weight:700;transition:filter .15s,transform .15s}
@@ -62,39 +63,43 @@
       <img src="logo.jpg" alt="Logo" class="logo" />
       <h1>G.P.F. Training Hub</h1>
       <div class="sub">Allenati con banche dati distinte: <b>Difesa Terrestre</b>, <b>Combat Readiness</b>, <b>WS3</b>.</div>
-    </header>
+      </header>
 
     <!-- HOME -->
+    <section id="home" class="grid">
+      <div class="card" style="text-align:center;">
+        <h3 style="margin:0">Difesa Terrestre</h3>
+        <p style="margin:0 0 16px 0;"></p>
+        <div class="row" style="justify-content:center;">
+          <button class="btn primary" data-dataset="difesa">Apri simulatore</button>
+          <button class="btn ghost" data-print="difesa">Visualizza banca dati</button>
+        </div>
+      </div>
+
+      <div class="card" style="text-align:center;">
+        <h3 style="margin:0">Combat Readiness</h3>
+        <p style="margin:0 0 16px 0;"></p>
+        <div class="row" style="justify-content:center;">
+          <button class="btn primary" data-dataset="combad">Apri simulatore</button>
+          <button class="btn ghost" data-print="combad">Visualizza banca dati</button>
+        </div>
+      </div>
+
+      <div class="card" style="text-align:center;">
+        <h3 style="margin:0">Ws3</h3>
+        <p style="margin:0 0 16px 0;"></p>
+        <div class="row" style="justify-content:center;">
+          <button class="btn primary" data-dataset="ws3">Apri simulatore</button>
+          <button class="btn ghost" data-print="ws3">Visualizza banca dati</button>
+        </div>
+      </div>
     
-      <section id="home" class="grid">
-  <div class="card" style="text-align:center;">
-    <h3 style="margin:0">Difesa Terrestre</h3>
-    <p style="margin:0 0 16px 0;"></p>
-    <div class="row" style="justify-content:center;">
-      <button class="btn primary" data-dataset="difesa">Apri simulatore</button>
-      <button class="btn ghost" data-print="difesa">Visualizza banca dati</button>
-    </div>
-  </div>
+      <!-- Fullscreen toggle button moved here -->
+      <div class="row fullrow" style="justify-content:center; margin-top:12px; margin-bottom:4px">
+        <button class="btn secondary" id="fsBtn" title="Schermo intero" aria-pressed="false">⤢ Schermo intero</button>
+      </div>
 
-  <div class="card" style="text-align:center;">
-    <h3 style="margin:0">Combat Readiness</h3>
-    <p style="margin:0 0 16px 0;"></p>
-    <div class="row" style="justify-content:center;">
-      <button class="btn primary" data-dataset="combad">Apri simulatore</button>
-      <button class="btn ghost" data-print="combad">Visualizza banca dati</button>
-    </div>
-  </div>
-
-  <div class="card" style="text-align:center;">
-    <h3 style="margin:0">Ws3</h3>
-    <p style="margin:0 0 16px 0;"></p>
-    <div class="row" style="justify-content:center;">
-      <button class="btn primary" data-dataset="ws3">Apri simulatore</button>
-      <button class="btn ghost" data-print="ws3">Visualizza banca dati</button>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- CONFIG -->
     <section id="config" class="panel hidden">
@@ -124,9 +129,7 @@
       <div class="row" style="margin-top:10px">
         <button class="btn primary" id="startBtn">Inizia</button>
         <button class="btn secondary" id="backHome">Indietro</button>
-        <button class="btn ghost" id="printBtn">Stampa banca dati PDF</button>
       </div>
-
     </section>
 
     <!-- QUIZ -->
@@ -188,7 +191,7 @@
   <!-- Print Modal (choose materia & highlight) -->
   <div id="printOverlay" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="printTitle">
     <div class="modal-card">
-      <h3 id="printTitle">Stampa banca dati</h3>
+      <h3 id="printTitle">Visualizza banca dati</h3>
       <div class="label">Materia</div>
       <select id="printMateria"></select>
       <div class="row" style="margin-top:8px">
@@ -300,6 +303,7 @@
     printShowAnswers: document.getElementById('printShowAnswers'),
     printCancel: document.getElementById('printCancel'),
     printGo: document.getElementById('printGo'),
+    fsBtn: document.getElementById('fsBtn')
   };
 
   const DATA_FILES = { difesa: 'data/difesa.json', combad: 'data/combad.json', ws3: 'data/ws3.json' };
@@ -560,12 +564,14 @@
   });
 
   // Print flow (from config)
-  UI.printBtn.addEventListener('click', ()=>{
-    if(!state.dataset){ alert('Scegli prima un simulatore.'); return; }
-    openPrintModal();
-  });
-  UI.printCancel.addEventListener('click', ()=>UI.printOverlay.classList.add('hidden'));
-  UI.printGo.addEventListener('click', ()=>{
+  if (UI.printBtn) {
+    UI.printBtn.addEventListener('click', ()=>{
+      if(!state.dataset){ alert('Scegli prima un simulatore.'); return; }
+      openPrintModal();
+    });
+  }
+  if (UI.printCancel) UI.printCancel.addEventListener('click', ()=>UI.printOverlay.classList.add('hidden'));
+  if (UI.printGo) UI.printGo.addEventListener('click', ()=>{
     const optionMateria = UI.printMateria.value; // '__ALL__' or name
     const highlight = !!UI.printShowAnswers.checked;
     const payload = { key: state.datasetKey, dataset: state.dataset, optionMateria, highlight };
@@ -575,6 +581,46 @@
     UI.printOverlay.classList.add('hidden');
     window.open('print.html', '_blank');
   });
+
+  // ==== Fullscreen API ====
+  function isFs(){
+    return document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement;
+  }
+  async function enterFs(elem = document.documentElement){
+    if (elem.requestFullscreen) return elem.requestFullscreen();
+    if (elem.webkitRequestFullscreen) return elem.webkitRequestFullscreen();
+    if (elem.msRequestFullscreen) return elem.msRequestFullscreen();
+  }
+  async function exitFs(){
+    if (document.exitFullscreen) return document.exitFullscreen();
+    if (document.webkitExitFullscreen) return document.webkitExitFullscreen();
+    if (document.msExitFullscreen) return document.msExitFullscreen();
+  }
+
+  if (UI.fsBtn) {
+    UI.fsBtn.addEventListener('click', async ()=>{
+      try {
+        if (!isFs()) {
+          await enterFs();
+          UI.fsBtn.textContent = '⤡ Esci schermo intero';
+          UI.fsBtn.setAttribute('aria-pressed', 'true');
+        } else {
+          await exitFs();
+          UI.fsBtn.textContent = '⤢ Schermo intero';
+          UI.fsBtn.setAttribute('aria-pressed', 'false');
+        }
+      } catch (e) {
+        alert('Il browser ha bloccato il full screen oppure non è supportato.');
+      }
+    });
+    ['fullscreenchange','webkitfullscreenchange','msfullscreenchange'].forEach(evt => {
+      document.addEventListener(evt, () => {
+        const on = !!isFs();
+        UI.fsBtn.textContent = on ? '⤡ Esci schermo intero' : '⤢ Schermo intero';
+        UI.fsBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+    });
+  }
   </script>
 
   <!-- iOS Install Guide Modal -->
@@ -593,6 +639,4 @@
     </div>
   </div>
 </body>
-</html>
-
 </html>
