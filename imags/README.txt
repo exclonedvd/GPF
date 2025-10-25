@@ -1,0 +1,1 @@
+Place here the question images referenced in JSON (paths like imags/XYZ.png).
