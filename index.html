@@ -602,11 +602,11 @@
       try {
         if (!isFs()) {
           await enterFs();
-          UI.fsBtn.textContent = '⤡ Esci schermo intero';
+          UI.fsBtn.textContent = '⤡ Esci schermo intero (Disponibile solo su PC/desktop)';
           UI.fsBtn.setAttribute('aria-pressed', 'true');
         } else {
           await exitFs();
-          UI.fsBtn.textContent = '⤢ Schermo intero';
+          UI.fsBtn.textContent = '⤢ Schermo intero (Disponibile solo su PC/desktop)';
           UI.fsBtn.setAttribute('aria-pressed', 'false');
         }
       } catch (e) {
@@ -616,7 +616,7 @@
     ['fullscreenchange','webkitfullscreenchange','msfullscreenchange'].forEach(evt => {
       document.addEventListener(evt, () => {
         const on = !!isFs();
-        UI.fsBtn.textContent = on ? '⤡ Esci schermo intero' : '⤢ Schermo intero';
+        UI.fsBtn.textContent = on ? '⤡ Esci schermo intero (Disponibile solo su PC/desktop)' : '⤢ Schermo intero (Disponibile solo su PC/desktop)';
         UI.fsBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
       });
     });
